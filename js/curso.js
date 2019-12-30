@@ -60,4 +60,23 @@ while(num>=0){
 
     alert("La suma es "+suma);
 }
+mostrar todos los numero entre 2 numero dados
+
+var num1 = parseInt(prompt("Primer número:"));
+var num2 = parseInt(prompt("Segundo número:"));
+
+document.write("<h1>Los numeros impares entre el  " +num1+ " y el  " +num2+" :</h1>");
+for (var i=num1; i<=num2; i++){
+    if((i%2)!=0){
+        document.write(i+"</br>");
+    };
+}
+mostrar todos los divisores de un numero dado
 */
+var num = parseInt(prompt("Primer número:"));
+
+for(var i=1; i<=num; i++){
+    if((num%i)==0){
+        console.log("Este numero es divisor "+i);
+    }
+};
