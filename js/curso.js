@@ -71,7 +71,8 @@ for (var i=num1; i<=num2; i++){
         document.write(i+"</br>");
     };
 }
-mostrar todos los divisores de un numero dado
+mostrar todos los divisores de un numero dado por el usuario
+
 */
 var num = parseInt(prompt("Primer número:"));
 
