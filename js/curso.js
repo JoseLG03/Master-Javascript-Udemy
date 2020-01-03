@@ -71,13 +71,24 @@ for (var i=num1; i<=num2; i++){
         document.write(i+"</br>");
     };
 }
-mostrar todos los divisores de un numero dado por el usuario
+si un numero es par o impar
 
-*/
-var num = parseInt(prompt("Primer número:"));
+
 
 for(var i=1; i<=num; i++){
     if((num%i)==0){
         console.log("Este numero es divisor "+i);
     }
+};
+*/
+var num = parseInt(prompt("Dame tu número:"));
+
+while(isNaN(num)){
+    num = parseInt(prompt("Número no valido, vuelva a intentarlo:"));
+}
+
+if((num % 2)!=0){
+    document.write("<p>El numero "+num+" es impar.</p>");
+}else{
+    document.write("<p>El numero "+num+" es par.</p>");
 };
