@@ -80,7 +80,7 @@ for(var i=1; i<=num; i++){
         console.log("Este numero es divisor "+i);
     }
 };
-*/
+
 var num = parseInt(prompt("Dame tu número:"));
 
 while(isNaN(num)){
@@ -92,3 +92,28 @@ if((num % 2)!=0){
 }else{
     document.write("<p>El numero "+num+" es par.</p>");
 };
+tabla de multiplicar de un numero dado
+
+
+var num = parseInt(prompt("Dame el número para hacer la tabla:"));
+while(isNaN(num)){
+    num = parseInt(prompt("Número no valido, vuelva a intentarlo:"));
+}
+for(var i=1; i<=10; i++){
+    document.write("<p>"+num+" x "+i+" = "+(num*i)+".</p>");
+};
+calculadora
+*/
+var num1 = parseInt(prompt("Dame el primero número:"));
+while(isNaN(num1)){
+    num1 = parseInt(prompt("Número 1 no valido, vuelva a intentarlo:"));
+}
+var num2 = parseInt(prompt("Dame el segundo número:"));
+while(isNaN(num2)){
+    num2 = parseInt(prompt("Número 2 no valido, vuelva a intentarlo:"));
+}
+
+document.write("<p>"+num1+" + "+num2+" = "+(num1+num2)+".</p>");
+document.write("<p>"+num1+" - "+num2+" = "+(num1-num2)+".</p>");
+document.write("<p>"+num1+" * "+num2+" = "+(num1*num2)+".</p>");
+document.write("<p>"+num1+" / "+num2+" = "+(num1/num2)+".</p>");
