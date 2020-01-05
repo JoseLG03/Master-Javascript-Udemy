@@ -123,8 +123,25 @@ function calculadora(num1,num2){
 }
 
 calculadora(10,5);
-*/
+
 
 var pelicula = function(nombre){
     return "La pelicula se llama:    "+nombre;
 }
+*/
+function findLongest(str) {
+    var spl = str.split(" ");
+    console.log(spl);
+    var longest = 0;
+    
+    for (var i = 0; i <= spl.length; i++) {
+    if (spl(i).length > longest) {
+        longest = spl[i].length
+      }
+    }
+    console.log(spl);
+    return spl;
+}; 
+
+findLongest("Hola mundo. Saludos desde Santa Ana Maya.");
+
