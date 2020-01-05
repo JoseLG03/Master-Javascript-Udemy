@@ -128,7 +128,7 @@ calculadora(10,5);
 var pelicula = function(nombre){
     return "La pelicula se llama:    "+nombre;
 }
-*/
+
 function findLongest(str) {
     var spl = str.split(" ");
     console.log(spl);
@@ -145,3 +145,15 @@ function findLongest(str) {
 
 findLongest("Hola mundo. Saludos desde Santa Ana Maya.");
 
+function par_impar(num){
+    return (num % 2)===0 ? "Par" : "Impar";
+};
+
+console.log(par_impar(7));
+*/
+function calculadora(num1,num2){
+    var suma=`La suma de ${num1} y de ${num2} es de: `+(num1+num2)+`.`; 
+    document.write(suma);
+}
+
+calculadora(10,5);
