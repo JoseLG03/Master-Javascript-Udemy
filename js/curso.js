@@ -116,10 +116,15 @@ document.write("<p>"+num1+" + "+num2+" = "+(num1+num2)+".</p>");
 document.write("<p>"+num1+" - "+num2+" = "+(num1-num2)+".</p>");
 document.write("<p>"+num1+" * "+num2+" = "+(num1*num2)+".</p>");
 document.write("<p>"+num1+" / "+num2+" = "+(num1/num2)+".</p>");
-*/
+
 function calculadora(num1,num2){
     console.log("La suma de "+num1+" y de "+num2+" es de "+(num1+num2)+".");
     console.log("La resta de "+num1+" y de "+num2+" es de "+(num1-num2)+".");
 }
 
 calculadora(10,5);
+*/
+
+var pelicula = function(nombre){
+    return "La pelicula se llama:    "+nombre;
+}
