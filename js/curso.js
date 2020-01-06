@@ -150,10 +150,11 @@ function par_impar(num){
 };
 
 console.log(par_impar(7));
-*/
+
 function calculadora(num1,num2){
     var suma=`La suma de ${num1} y de ${num2} es de: `+(num1+num2)+`.`; 
     document.write(suma);
 }
 
 calculadora(10,5);
+*/
