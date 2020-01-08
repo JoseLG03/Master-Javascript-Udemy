@@ -158,3 +158,11 @@ function calculadora(num1,num2){
 
 calculadora(10,5);
 */
+
+var lenguajes=["C", "C++","Java", "Phyton", "Ruby", "Javascript"];
+
+
+lenguajes.forEach((elemento,index,array)=>{
+    console.log(lenguajes);
+    document.write("<li>"+index+" - "+elemento +"</li>");
+});
