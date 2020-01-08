@@ -161,8 +161,12 @@ calculadora(10,5);
 
 var lenguajes=["C", "C++","Java", "Phyton", "Ruby", "Javascript"];
 
-
 lenguajes.forEach((elemento,index,array)=>{
-    console.log(lenguajes);
-    document.write("<li>"+index+" - "+elemento +"</li>");
+    //console.log(lenguajes);
+    //document.write("<li>"+index+" - "+elemento +"</li>");
 });
+
+lenguajes.push("PHP");
+console.log(lenguajes);
+lenguajes.pop();
+console.log(lenguajes);
