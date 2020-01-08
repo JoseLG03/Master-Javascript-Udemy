@@ -157,7 +157,7 @@ function calculadora(num1,num2){
 }
 
 calculadora(10,5);
-*/
+
 
 var lenguajes=["C", "C++","Java", "Phyton", "Ruby", "Javascript"];
 
@@ -170,3 +170,20 @@ lenguajes.push("PHP");
 console.log(lenguajes);
 lenguajes.pop();
 console.log(lenguajes);
+
+var index = lenguajes.indexOf("C++");
+console.log(index);
+if(index > -1){
+    lenguajes.splice(index,1);
+}
+console.log(lenguajes);
+
+var lenguajes_string = lenguajes.join();
+console.log(lenguajes_string);
+pide 6 numeros
+mostrar el array entero y en la pagina y consola
+ordenar el array
+invertir su orden y mostrarlo
+mosstrar cuantos elementos tiene
+buscar un valor dado por el usuario y decir si esta y en que posicion
+*/
