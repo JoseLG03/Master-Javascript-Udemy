@@ -187,3 +187,29 @@ invertir su orden y mostrarlo
 mosstrar cuantos elementos tiene
 buscar un valor dado por el usuario y decir si esta y en que posicion
 */
+var numeros_array=[];
+for(var i=0; i<=5; i++){
+    var elemento = prompt("Introduce tu número:");
+    while(isNaN(elemento) == true){
+        prompt("Numero no valido");
+    }
+    numeros_array.push(elemento);
+};
+numeros_array.forEach((elemento)=>{
+    document.write("<li>"+elemento +"</li>");
+});
+numeros_array.sort((a,b)=>a-b);
+console.log(numeros_array);
+numeros_array.reverse();
+console.log(numeros_array);
+console.log(numeros_array.length);
+
+var elemento_buscado = prompt("Introduce el número que quieres buscar:");
+
+var busqueda=numeros_array.find(numeros_array => numeros_array==elemento_buscado);
+if (busqueda = elemento_buscado){
+    var busqueda_index = numeros_array.findIndex(numeros_array => numeros_array == elemento_buscado); 
+    console.log("Elemento encontrado: "+elemento_buscado+" con el index "+busqueda_index);
+}else{
+    console.log("No se encontro su busqueda");
+}
