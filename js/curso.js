@@ -189,19 +189,29 @@ buscar un valor dado por el usuario y decir si esta y en que posicion
 */
 var numeros_array=[];
 for(var i=0; i<=5; i++){
-    var elemento = prompt("Introduce tu número:");
-    while(isNaN(elemento) == true){
-        prompt("Numero no valido");
-    }
+    var elemento = parseInt(prompt("Introduce tu número:"));
     numeros_array.push(elemento);
 };
-numeros_array.forEach((elemento)=>{
-    document.write("<li>"+elemento +"</li>");
-});
+
+function mostrarArray(array, texto=""){
+    document.write("<h1>Contenido del array "+texto+"</h1>");
+    document.write("<ul>");
+    numeros_array.forEach((array)=>{
+    document.write("<li>"+ array +"</li>");
+    });
+    document.write("</ul>");
+};
+
+mostrarArray(numeros_array);
+
 numeros_array.sort((a,b)=>a-b);
 console.log(numeros_array);
+mostrarArray(numeros_array, "ordenado.");
+
 numeros_array.reverse();
+mostrarArray(numeros_array, "en reversa.");
 console.log(numeros_array);
+
 console.log(numeros_array.length);
 
 var elemento_buscado = prompt("Introduce el número que quieres buscar:");
@@ -209,7 +219,9 @@ var elemento_buscado = prompt("Introduce el número que quieres buscar:");
 var busqueda=numeros_array.find(numeros_array => numeros_array==elemento_buscado);
 if (busqueda = elemento_buscado){
     var busqueda_index = numeros_array.findIndex(numeros_array => numeros_array == elemento_buscado); 
-    console.log("Elemento encontrado: "+elemento_buscado+" con el index "+busqueda_index);
+    console.log("Elemento encontrado: "+elemento_buscado+" con el index "+ busqueda_index);
 }else{
     console.log("No se encontro su busqueda");
 }
+
+console.log(busqueda);
