@@ -239,7 +239,6 @@ for(valor in todos_los_div){
    }
 };
 
-console.log(todos_los_div);
 
 console.log(window.location);
 
