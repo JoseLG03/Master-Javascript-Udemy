@@ -184,9 +184,9 @@ pide 6 numeros
 mostrar el array entero y en la pagina y consola
 ordenar el array
 invertir su orden y mostrarlo
-mosstrar cuantos elementos tiene
+mostrar cuantos elementos tiene
 buscar un valor dado por el usuario y decir si esta y en que posicion
-*/
+
 var numeros_array=[];
 for(var i=0; i<=5; i++){
     var elemento = parseInt(prompt("Introduce tu número:"));
@@ -225,3 +225,24 @@ if (busqueda = elemento_buscado){
 }
 
 console.log(busqueda);
+*/
+
+var todos_los_div = document.getElementsByTagName("div");
+
+var valor;
+for(valor in todos_los_div){
+   if(typeof todos_los_div[valor].textContent == 'string'){
+        var parrafo = document.createElement("p");
+        var texto = document.createTextNode(todos_los_div[valor].textContent);
+        parrafo.append(texto);
+        document.querySelector("#mi_seccion").prepend(parrafo);
+   }
+};
+
+console.log(todos_los_div);
+
+console.log(window.location);
+
+function abrir_ventana(url){ 
+    window.open(url,"", "width = 400, height=300");
+};
