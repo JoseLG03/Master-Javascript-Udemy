@@ -225,7 +225,7 @@ if (busqueda = elemento_buscado){
 }
 
 console.log(busqueda);
-*/
+
 
 var todos_los_div = document.getElementsByTagName("div");
 
@@ -245,3 +245,9 @@ console.log(window.location);
 function abrir_ventana(url){ 
     window.open(url,"", "width = 400, height=300");
 };
+formulario con nombre, apellido, edad
+evento submit
+mostrar datos por pantalla
+un boton que al click nos muestra los datos actuales del formulario
+*/
+
