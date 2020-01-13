@@ -259,10 +259,26 @@ window.addEventListener('load', function(){
         
         var nombre = document.querySelector("#input_nombre").value; 
         var apellidos = document.querySelector("#input_apellidos").value;
-        var edad = document.querySelector("#input_edad").value;
+        var edad = parseInt(document.querySelector("#input_edad").value);
 
-        box_dashed.style.display = 'block';
         console.log(nombre, apellidos, edad);
+
+        if (nombre.trim() == null || nombre.trim().length == 0){
+            alert("El campo nombre debe contener algun valor");
+            document.querySelector("#error_nombre").innerHTML="Nombre no valido";
+            return false;
+        }else{
+            document.querySelector("#error_nombre").style.display = 'none';
+        };
+        if (apellidos.trim() == null || apellidos.trim().length == 0){
+            alert("El campo apellidos debe contener algun valor");
+            return false;
+        };
+        if (edad == null || edad <= 0 || isNaN(edad)){
+            alert("El campo edad no es valido");
+            return false;
+        };
+        box_dashed.style.display = 'block';
 
         var datos_usuario=[nombre, apellidos, edad];
         for (const index in datos_usuario) {
@@ -270,5 +286,7 @@ window.addEventListener('load', function(){
             parrafo.append(datos_usuario[index]);
             box_dashed.append(parrafo);
         }
+        //var p_nombre = document.querySelector("#p_nombre span");
+        //p_nombre.innerHTML= nombre;
     });
 });
