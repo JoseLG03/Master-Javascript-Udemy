@@ -251,3 +251,10 @@ mostrar datos por pantalla
 un boton que al click nos muestra los datos actuales del formulario
 */
 
+var nombre = document.getElementById('input_nombre');
+var apellido = document.getElementById('input_apellido');
+var edad = document.getElementById('input_edad');
+
+console.log(nombre);
+console.log(apellido);
+console.log(edad);

@@ -9,17 +9,19 @@
     </head>
     <body>
         <h1>Formulario</h1>
-        <form id="form">
-            <p>Inserta tu nombre</p>
-            <input type="text">    
-            <p>Inserta tus apellidos</p>
-            <input type="text">
-            <p>Inserta tu edad</p>
-            <input type="text">
-            <hr>
-            <button id="boton_enviar">Enviar</button>
-            <hr>
-            <button id="datos_form">Muestra los datos</button>
+        <p>
+        <form id="form" action="" method="POST">
+            <label>Inserta tu nombre:</label>
+            <input type="text" id="input_nombre">  
+            <br>  
+            <label>Inserta tus apellidos:</label>
+            <input type="text" id="input_apellidos">
+            <br>
+            <label>Inserta tu edad:</label>
+            <input type="text" id="input_edad">
+            <br>
+            <input id="input_enviar" type="submit" value="enviar"/>
         </form>
+        </p>
     </body>
 </html>
