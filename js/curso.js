@@ -250,11 +250,25 @@ evento submit
 mostrar datos por pantalla
 un boton que al click nos muestra los datos actuales del formulario
 */
+window.addEventListener('load', function(){
+    var form = document.getElementById('form');
+    var box_dashed= document.getElementById('box_dashed');
+    box_dashed.style.display = 'none';
+    form.addEventListener('submit', function(){
+        console.log("evento enviar");
+        
+        var nombre = document.querySelector("#input_nombre").value; 
+        var apellidos = document.querySelector("#input_apellidos").value;
+        var edad = document.querySelector("#input_edad").value;
 
-var nombre = document.getElementById('input_nombre');
-var apellido = document.getElementById('input_apellido');
-var edad = document.getElementById('input_edad');
+        box_dashed.style.display = 'block';
+        console.log(nombre, apellidos, edad);
 
-console.log(nombre);
-console.log(apellido);
-console.log(edad);
+        var datos_usuario=[nombre, apellidos, edad];
+        for (const index in datos_usuario) {
+            var parrafo = document.createElement("p");
+            parrafo.append(datos_usuario[index]);
+            box_dashed.append(parrafo);
+        }
+    });
+});
