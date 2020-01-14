@@ -1,5 +1,5 @@
 'use strict'
-
+/*
 var pelicula = {
     titulo:"Spider-man",
     año: 2018,
@@ -20,3 +20,25 @@ for (const index in peliculas) {
 
 console.log(pelicula);
 console.log(peliculas);
+*/
+if(typeof(Storage) != "undefined"){
+    console.log("Si hay storage");
+};
+
+localStorage.setItem("titulo", "Curso de JS");
+
+document.querySelector("#pelis").innerHTML = localStorage.getItem("titulo");
+
+var pelicula = {
+    titulo:"Spider-man",
+    año: 2018,
+    pais: "USA",
+};
+
+localStorage.setItem("pelicula", JSON.stringify(pelicula));
+
+var json_pelis = JSON.parse(localStorage.getItem("pelicula"));
+
+console.log(json_pelis);
+
+localStorage.removeItem("pelicula");
