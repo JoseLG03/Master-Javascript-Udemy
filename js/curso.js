@@ -301,9 +301,9 @@ var div_janet = document.querySelector("#div_janet");
 
         return getJanet();
     })
-    .then(data => data.json())
-    .then(user =>{
-        usuario_janet(user.data.first_name);
+    .then(data_janet => data_janet.json())
+    .then(data_janet =>{
+        usuario_janet(data_janet.data);
     });
 
     function getUsuarios(){
@@ -331,10 +331,17 @@ var div_janet = document.querySelector("#div_janet");
     function usuario_janet(user){
             console.log(user);
             let nombre = document.createElement("h3");
+            let email = document.createElement("h3");
+            let img = document.createElement("img");
 
-            nombre.innerHTML = user;
+            nombre.innerHTML = user.first_name;
+            email.innerHTML = user.email;
+            img.src = user.avatar;   
+            img.width = "100"; 
 
             div_janet.appendChild(nombre);
+            div_janet.append(email);
+            div_janet.append(img);
 
             document.querySelector("#loading_janet").style.display = "none"; 
     };
