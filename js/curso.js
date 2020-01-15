@@ -249,7 +249,7 @@ formulario con nombre, apellido, edad
 evento submit
 mostrar datos por pantalla
 un boton que al click nos muestra los datos actuales del formulario
-*/
+
 window.addEventListener('load', function(){
     var form = document.getElementById('form');
     var box_dashed= document.getElementById('box_dashed');
@@ -290,3 +290,24 @@ window.addEventListener('load', function(){
         //p_nombre.innerHTML= nombre;
     });
 });
+*/
+var usuarios = [];
+var div = document.querySelector("#usuarios");
+
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(data => data.json())
+    .then(data => {
+        usuarios = data;
+        console.log(usuarios);
+
+        usuarios.map((user,i) =>{
+            let nombre = document.createElement("h3");
+            let email = document.createElement("p");
+
+            nombre.innerHTML = i + user.name + " - "+ user.username;
+            email.innerHTML = user.email;
+
+            div.appendChild(nombre);
+            div.appendChild(email);
+        });
+    });
