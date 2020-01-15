@@ -291,15 +291,29 @@ window.addEventListener('load', function(){
     });
 });
 */
-var usuarios = [];
 var div = document.querySelector("#usuarios");
+var div_janet = document.querySelector("#div_janet");
 
-fetch("https://jsonplaceholder.typicode.com/users")
+    getUsuarios()
     .then(data => data.json())
     .then(data => {
-        usuarios = data;
-        console.log(usuarios);
+        listado_usuario(data);
 
+        return getJanet();
+    })
+    .then(data => data.json())
+    .then(user =>{
+        usuario_janet(user.data.first_name);
+    });
+
+    function getUsuarios(){
+        return fetch("https://jsonplaceholder.typicode.com/users")
+    };
+    function getJanet(){
+        return fetch("https://reqres.in/api/users/2")
+    };
+
+    function listado_usuario(usuarios){
         usuarios.map((user,i) =>{
             let nombre = document.createElement("h3");
             let email = document.createElement("p");
@@ -309,5 +323,18 @@ fetch("https://jsonplaceholder.typicode.com/users")
 
             div.appendChild(nombre);
             div.appendChild(email);
+
+            document.querySelector("#loading").style.display = "none";
         });
-    });
+    };
+
+    function usuario_janet(user){
+            console.log(user);
+            let nombre = document.createElement("h3");
+
+            nombre.innerHTML = user;
+
+            div_janet.appendChild(nombre);
+
+            document.querySelector("#loading_janet").style.display = "none"; 
+    };
