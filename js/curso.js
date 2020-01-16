@@ -304,6 +304,11 @@ var div_janet = document.querySelector("#div_janet");
     .then(data_janet => data_janet.json())
     .then(data_janet =>{
         usuario_janet(data_janet.data);
+
+        return getInfo();
+    })
+    .then(data_profe => {
+        console.log(data_profe);
     });
 
     function getUsuarios(){
@@ -328,6 +333,23 @@ var div_janet = document.querySelector("#div_janet");
         });
     };
 
+    function getInfo(){
+        var profesor = {
+            nombre: "Juan",
+            apellido: "Perez",
+            edad: 33
+        };
+        return new Promise((resolve, reject) =>{
+            let profe_string  = JSON.stringify(profesor);
+
+            if (typeof profe_string != "string"){
+                return reject("Error en la promesa");
+            }else{
+                return resolve(profe_string);
+            }
+        });
+    };
+
     function usuario_janet(user){
             console.log(user);
             let nombre = document.createElement("h3");
@@ -345,3 +367,4 @@ var div_janet = document.querySelector("#div_janet");
 
             document.querySelector("#loading_janet").style.display = "none"; 
     };
+    
