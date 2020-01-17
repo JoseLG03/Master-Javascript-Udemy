@@ -6,13 +6,23 @@
             Aprendiendo JQuery
         </title>
         <script type="text/javascript" src="jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
         <script>
             $(document).ready(function(){
                 console.log("jQuery cargado");
             });
         </script>
+        <style>
+            .punteado{
+                border: 5px dashed black;
+            }
+        </style>
     </head>
     <body>
         <h1>Aprendiendo JQuery</h1>
+        <p id="rojo" class="sin_borde">Ejercicios de jQuery</p>
+        <p id="verde" class="punteado">Vamos a practicar</p>
+        <p id="amarillo" class="sin_borde">Debo ser yellow</p>
+        <p id="naranja" class="punteado">Debo ser naranja</p>
     </body>
 </html>
