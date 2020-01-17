@@ -9,4 +9,10 @@ $(document).ready(function(){
         console.log("Click dado");
         $(this).addClass("punteado");
     });
+
+    var parrafo = $("p");
+
+    parrafo.click(function(){
+        $(this).removeClass("sin_borde");
+    });
 });
