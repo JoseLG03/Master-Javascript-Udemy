@@ -26,4 +26,15 @@ $(document).ready(function(){
                .css("color", "red")
                .css("font-size", "20px");
     });
+
+    let input = $("#nombre");
+
+    input.focus(function(){
+        $(this).css("border", "2px solid green");
+    });
+
+    input.blur(function(){
+        $(this).css("border","1px solid #ccc");
+        $("#datos").text($(this).val()).show();
+    });
 });
