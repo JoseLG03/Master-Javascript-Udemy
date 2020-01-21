@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Aprendiendo jQuery
+        </title>
+        <script type="text/javascript" src="jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="ajax.js"></script>
+        <style>
+            #datos{
+                border: 2px solid gainsboro;
+                width: 200px;
+                height: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Aprendiendo jQuery</h1>
+        <div id="datos"></div>
+        <br>
+        <form id="formulario" action="https://reqres.in/api/users" method="POST">
+            Nombre:<input type="text" id="input_nombre" name="nombre" />
+            Edad:<input type="text" id="input_edad" name="edad"/>
+            <input type="submit" value="Registrar"/>
+            <br>
+        </form>
+    </body>
+</html>
