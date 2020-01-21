@@ -4,7 +4,9 @@ $(document).ready(function(){
     let caja = $("#caja");
 
     $("#btn_ocultar").click(function(){
-        caja.fadeIn("slow");
+        caja.fadeIn("slow", function(){
+            console.log("boton ocultado");
+        });
     });
 
     $("#btn_mostrar").click(function(){
@@ -19,6 +21,10 @@ $(document).ready(function(){
         caja.animate({
             marginLeft: "300px",
             height: "200px",
+        }, "slow")
+        .animate({
+            borderRadius:"900px",
+            marginTop:"80px",
         }, "slow");
     });
 });
