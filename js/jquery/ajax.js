@@ -19,12 +19,13 @@ $(document).ready(function(){
             name: $('input[id = "input_nombre"]').val(),
             age: $('input[id = "input_edad"]').val()
         };
+        /*
         $.post($(this).attr("action"), usuario, function(response){
             console.log(response);
         }).done(function(){
             alert("Usuario registrado correctamente.");
         });
-        
+        */
         $.ajax({
             type: 'POST',
             url: $(this).attr("action"),
