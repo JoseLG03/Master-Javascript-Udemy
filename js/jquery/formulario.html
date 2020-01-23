@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Inicio
+        </title>
+        <script type="text/javascript" src="js/curso.js"></script>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                float: left;
+                margin: 20px;
+            }
+            .dashed{
+                border: 3px dashed black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <div class="box">
+        <form id="form" action="#" method="POST" onsubmit="return false;">
+            <label>Inserta tu nombre:</label>
+            <br/>
+            <input type="text" id="input_nombre">
+            <span id="error_nombre"></span>  
+            <br/>  
+            <label>Inserta tus apellidos:</label>
+            <br/>
+            <input type="text" id="input_apellidos">
+            <span id="error_apellidos"></span>  
+            <br/>
+            <label>Inserta tu edad:</label>
+            <br/>
+            <input type="text" id="input_edad">
+            <span id="error_edad"></span>  
+            <br/>
+            <input id="input_enviar" type="submit" value="enviar"/>
+        </form>
+        </div>
+        <div class="box dashed" id="box_dashed">
+            <h3>
+                Información del usuario
+            </h3>
+            <hr>
+        </div>
+    </body>
+</html>
