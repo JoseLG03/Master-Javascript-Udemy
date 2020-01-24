@@ -24,7 +24,7 @@ body{
 
 #logo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
+    font-size: 27px;
     letter-spacing: 4px;
     background: #235e3d;
     color: white;
@@ -34,4 +34,35 @@ body{
     float: left;
     margin-bottom: 20px;
     line-height: 75px;
+    text-transform: uppercase;
+}
+
+#menu{
+    font-family: Helvetica, Arial, sans-serif;
+    background: #333;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#menu ul{
+    line-height: 46px;    
+    list-style: none;
+    transition: all 300ms;
+}
+
+#menu li{
+    height: 46px;
+    display: inline-block;
+}
+
+#menu ul li:hover{
+    background: #235e3d;
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 30px;
 }
