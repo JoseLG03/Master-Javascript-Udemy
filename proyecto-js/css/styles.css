@@ -68,7 +68,7 @@ body{
 }
 
 #post{
-    width: 70%;
+    width: 450px;
     float: left;
     font-family: Helvetica, Arial, sans-serif;
     padding: 7px;
@@ -105,4 +105,35 @@ body{
     font-size: 14px;
     text-align: center;
     float: left;
+}
+
+#sidebar{
+    font-family: Helvetica, Arial,  sans-serif;
+    width: 350px;
+    float: right;
+    margin-right: 10px;
+}
+
+#sidebar h4{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url("../img/lines.png") repeat-x;
+}
+
+#sidebar h4 span{
+    background: white;
+    padding: 5px;
+    text-align: center;
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
 }
