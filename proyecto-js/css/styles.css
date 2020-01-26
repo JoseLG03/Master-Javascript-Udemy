@@ -13,6 +13,10 @@ body{
     clear: both;
 }
 
+.bx-wrapper, .bx-viewport{
+    height: 300px !important;
+}
+
 #global{
     width: 65%;
     margin: 0px auto;
