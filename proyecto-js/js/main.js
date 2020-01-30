@@ -57,6 +57,14 @@ $(document).ready(function(){
         $("#cambia_rojo").click(function(){
             tema.attr("href", "css/rojo.css");  
         });
+
+        //regresar
+        $(".subir").click(function(e){
+            e.preventDefault();
+            $("html,body").animate({
+                scrollTop: 0
+            },500);
+        });
 });
 
 
