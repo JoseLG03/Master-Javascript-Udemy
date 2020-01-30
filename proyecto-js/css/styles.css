@@ -1,5 +1,4 @@
 body{
-    background: url("../img/hojas.jpg");
     background-attachment: fixed;
 }
 
@@ -30,7 +29,6 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 27px;
     letter-spacing: 4px;
-    background: #235e3d;
     color: white;
     text-align: center;
     width: 385px;
@@ -57,10 +55,6 @@ body{
 #menu li{
     height: 46px;
     display: inline-block;
-}
-
-#menu ul li:hover{
-    background: #235e3d;
 }
 
 #menu a{
@@ -100,7 +94,6 @@ body{
 .leer_mas{
     padding: 15px;
     margin-bottom: 20px;
-    background: #235e3d;
     color: white;
     text-decoration: none;
     margin-top: 10px;
@@ -173,4 +166,37 @@ footer{
     padding-right: 26px;
     margin-top: 30px;
     line-height: 27px;
+}
+
+#cambiador_temas{
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.7);
+    width: 35px;
+    height: 100px;
+}
+
+#cambia_verde,
+#cambia_rojo,
+#cambia_azul{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#cambia_verde{
+    background: #235e3d;
+}
+
+#cambia_rojo{
+    background: #ca3413;
+}
+
+#cambia_azul{
+    background: #1f87c4;
 }

@@ -1,0 +1,16 @@
+body{
+    background: url("../img/hojas.jpg");
+    background-attachment: fixed;
+}
+
+#logo{
+    background: #235e3d;
+}
+
+#menu ul li:hover{
+    background: #235e3d;
+}
+
+.leer_mas{
+    background: #235e3d;
+}

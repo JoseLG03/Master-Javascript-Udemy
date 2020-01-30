@@ -1,4 +1,4 @@
-  $(document).ready(function(){
+$(document).ready(function(){
     //slider
     $('.galeria').bxSlider({
         mode: 'fade',
@@ -42,7 +42,21 @@
 
         $("#post").append(post);        
     });
-  });
+        //Cambio de temas
 
-  //Cambio de temas
+        var tema = $("#estilo");
+
+        $("#cambia_verde").click(function(){
+            tema.attr("href", "css/verde.css");  
+        });
+
+        $("#cambia_azul").click(function(){
+            tema.attr("href", "css/azul.css");  
+        });
+
+        $("#cambia_rojo").click(function(){
+            tema.attr("href", "css/rojo.css");  
+        });
+});
+
 
