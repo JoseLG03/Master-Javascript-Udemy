@@ -64,7 +64,28 @@ $(document).ready(function(){
             $("html,body").animate({
                 scrollTop: 0
             },500);
+            return false;
         });
+
+        //login falso
+        $("#form").submit(function(){
+            let form_nombre = $("#input_nombre").val();
+            localStorage.setItem("form_nombre", form_nombre);
+        });
+
+        let form_name = localStorage.getItem("form_nombre");
+        let about = $("#about p");
+
+        if(form_name != null){
+            about.html("<br/><strong>Bienvenido "+ form_name+"</strong>");
+            $("#login").hide();
+            about.append("<br><a href='#' id='cerrar'>Cerrar sesión</a>");
+
+            $("#cerrar").click(function(){
+                localStorage.clear();
+                location.reload();
+            });
+        }
 });
 
 
