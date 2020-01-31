@@ -97,6 +97,14 @@ $(document).ready(function(){
         if(window.location.href.indexOf("about") > -1){
             $("#acordeon").accordion();
         };
+
+        //reloj
+        if(window.location.href.indexOf("reloj") > -1){
+            let clock = moment().format("hh:mm:ss");
+            console.log(clock);
+            $("#reloj").html(clock);
+        };
+        
 });
 
 
