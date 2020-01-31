@@ -91,7 +91,12 @@ $(document).ready(function(){
                 localStorage.clear();
                 location.reload();
             });
-        }
+        };
+
+        //acordeon
+        if(window.location.href.indexOf("about") > -1){
+            $("#acordeon").accordion();
+        };
 });
 
 
