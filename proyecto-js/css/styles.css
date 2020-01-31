@@ -72,9 +72,20 @@ body{
     padding: 7px;
 }
 
-#post h2{
+#h2{
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 30px;
     color: #ccc;
+}
+
+.ui-accordion .ui-accordion-content{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.ui-accordion .ui-accordion-header{
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
 }
 
 #post fecha{
@@ -205,4 +216,10 @@ footer{
     color: white;
     text-decoration:none;
     float: right;
+}
+
+#acordeon{
+    width: 50%;
+    float: left;
+    margin-top: 45px;
 }

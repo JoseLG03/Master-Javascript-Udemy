@@ -7,6 +7,10 @@ body{
     background: #1f87c4;
 }
 
+.ui-accordion .ui-accordion-header{
+    background: #1f87c4;
+}   
+
 #menu ul li:hover{
     background: #1f87c4;
 }
