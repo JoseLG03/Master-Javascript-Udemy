@@ -99,16 +99,14 @@ $(document).ready(function(){
         };
 
         //validador de jQuery
-        if(window.location.href.indexOf("about") > -1){
+        if(window.location.href.indexOf("contacto") > -1){
             $.validate({
                 lang: 'es'
+            });
+            $("#fecha").datepicker({
+                dateFormat: 'dd-mm-yy'
             });
         }
-
-            $.validate({
-                lang: 'es'
-            });
-
 });
 
 
