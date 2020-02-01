@@ -12,7 +12,12 @@ body{
     clear: both;
 }
 
+.bx-wrapper{
+    margin-top: 35px;
+}
+
 .bx-wrapper, .bx-viewport{
+    
     height: 300px !important;
 }
 
@@ -114,7 +119,7 @@ body{
 
 #sidebar h4{
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
     line-height: 10px;
     color: #333;
@@ -135,6 +140,38 @@ body{
     font-size: 15px;
     text-align: justify;
 }
+
+#h2_titulo{
+    margin-bottom: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: gray;
+}
+
+#form_contacto{
+    width: 50%;
+    float: left;
+}
+
+#form_contacto input[type="text"],
+#form_contacto input[type="email"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px gray;
+    margin-top: 5px;
+}
+
+#form_contacto input[type = "submit"]{
+    background: #ccc;
+    padding: 10px;
+    border: 1px solid gray;
+    color: #333;
+    cursor: pointer;
+}
+
 
 form input[type="text"],
 form input[type="password"],
@@ -211,7 +248,7 @@ footer{
 #acordeon{
     width: 50%;
     float: left;
-    margin-top: 45px;
+    margin-top: 10px;
 }
 
  .ui-accordion .ui-accordion-content{
@@ -222,14 +259,4 @@ footer{
 .ui-accordion .ui-accordion-header{
     font-family: Helvetica, Arial, sans-serif;
     color: white;
-}
-
-#reloj{
-    margin-top: 5px;
-    float: left;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #333;
-    padding: 0px;
 }
