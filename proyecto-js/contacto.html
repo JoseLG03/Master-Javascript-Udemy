@@ -7,13 +7,10 @@
         <link  rel="stylesheet" type="text/css" href="css/styles.css"/>
         <link  rel="stylesheet"  id="estilo" type="text/css" href="css/verde.css" />
                 
-        <!-- mis scripts-->
+        <!-- jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="jquery-ui\jquery-ui.min.css"/>
-        <link rel="stylesheet" href="jquery-ui\jquery-ui.structure.min.css"/>
-        <link rel="stylesheet" href="jquery-ui\jquery-ui.theme.min.css"/>
-        <script src="jquery-ui\jquery-ui.min.js"></script> 
-
+        
+        <!-- mis scripts-->
         <script src="js/main.js"></script>
     </head>
     <body>
@@ -29,7 +26,6 @@
                     <h1>Proyecto JS</h1>
                 </div>
                 <div class="clearfix">
-
                 </div>
                 <nav id="menu">
                     <ul>
@@ -42,30 +38,30 @@
             <!-- Contenido -->  
                 <section id="contenido">
                     <div id="box">
-                    <!-- Se carga acorden-->           
-                        <div id="acordeon">
-                            <h2>¿Quien soy?</h2>
-                            <div>
-                                <p>
-                                    Lorem Ipsum has been the
-                                    industry's standard dummy text ever since the 1500s.
-                                </p>
-                            </div>
-                         <h3>Nuestra misión</h3>
-                            <div>
-                                <p>
-                                    Lorem Ipsum has been the
-                                    industry's standard dummy text ever since the 1500s.
-                                </p>
-                            </div>
-                        <h3>Nuestra visión</h3>
-                        <div>
-                            <p>
-                                Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s.
-                            </p>
-                        </div>    
-                    </div>
+                        <h2>Contacto</h2>
+                        <form>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name"/>
+
+                            <label for="lastname">Apellidos:</label>
+                            <input type="text" name="lastname"/>
+
+                            <label for="email">E-mail:</label>
+                            <input type="text" name="email"/>
+
+                            <label for="sex">Sexo:</label>
+                            <select name="sex">
+                                <option value="man">Hombre</option>
+                                <option value="woman">Mujer</option>
+                            </select>
+                            <br>
+                            <br>    
+                            <label for="date">Fecha de nacimiento:</label>
+                            <input type="text" name="date"/>
+
+                            <label for="age">Edad</label>
+                            <input type="text" name="age"/>
+                        </form>
                     </div>
                     <aside id="sidebar">
                         <div id="about">
@@ -77,7 +73,7 @@
                                 Lorem Ipsum has been the
                                 industry's standard dummy text ever since the 1500s,
                                 when an unknown printer took a galley of type and
-                                scrambled it to make a type specimen book.
+                                scrambled it to make a type specimen book
                             </p>
                         </div>        
                         <div id="login">
