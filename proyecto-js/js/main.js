@@ -34,7 +34,7 @@ $(document).ready(function(){
             }
         ]  
         
-        post.forEach((item, index) =>{
+        post.forEach((item) =>{
             var post = `
                 <article id="post">
                     <h2>${item.tittle}</h2>
