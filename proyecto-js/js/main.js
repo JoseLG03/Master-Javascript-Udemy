@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    
     //slider
     if(window.location.href.indexOf("index") > -1){
     $('.galeria').bxSlider({
@@ -11,6 +11,11 @@ $(document).ready(function(){
 
     //post
     if(window.location.href.indexOf("index") > -1){
+        
+        $.validate({
+            lang: 'es'
+        });
+
         var post =[
             {
                 tittle:"Titulo de prueba 1",
@@ -49,7 +54,6 @@ $(document).ready(function(){
     };
 
         //Cambio de temas
-
         var tema = $("#estilo");
 
         $("#cambia_verde").click(function(){
@@ -95,37 +99,42 @@ $(document).ready(function(){
 
         //acordeon
         if(window.location.href.indexOf("about") > -1){
+
+            $.validate({
+                lang: 'es'
+            });
+
             $("#acordeon").accordion();
         };
 
         //validador de jQuery
         if(window.location.href.indexOf("contacto") > -1){
+            
             $.validate({
                 lang: 'es'
             });
+
+            $.datepicker.regional['es'] = {
+                closeText: 'Cerrar',
+                prevText: '< Ant',
+                nextText: 'Sig >',
+                currentText: 'Hoy',
+                monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+                dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+                dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+                dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+                weekHeader: 'Sm',
+                dateFormat: 'dd/mm/yy',
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: ''
+                };
+                $.datepicker.setDefaults($.datepicker.regional['es']);
+
             $("#fecha").datepicker({
                 dateFormat: 'dd-mm-yy'
             });
         }
-
-        $.datepicker.regional['es'] = {
-            closeText: 'Cerrar',
-            prevText: '< Ant',
-            nextText: 'Sig >',
-            currentText: 'Hoy',
-            monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
-            monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
-            dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-            dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
-            dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
-            weekHeader: 'Sm',
-            dateFormat: 'dd/mm/yy',
-            firstDay: 1,
-            isRTL: false,
-            showMonthAfterYear: false,
-            yearSuffix: ''
-            };
-            $.datepicker.setDefaults($.datepicker.regional['es']);
 });
-
-
