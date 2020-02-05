@@ -1,3 +1,3 @@
 "use strict";
-var cadena = "Hola mundo2";
+var cadena = "Hola mundo";
 console.log(cadena);

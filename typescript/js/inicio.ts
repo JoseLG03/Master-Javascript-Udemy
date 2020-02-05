@@ -1,3 +1,3 @@
-let cadena: string = "Hola mundo2";
+let cadena: string = "Hola mundo";
 
 console.log(cadena);
