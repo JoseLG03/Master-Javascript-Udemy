@@ -1,0 +1,26 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "bxslider": "^4.2.14"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  },
+  "scripts": {
+    "start": "http-server -p 8400"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseLG03/-Master-Javascript-Udemy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseLG03/-Master-Javascript-Udemy/issues"
+  },
+  "homepage": "https://github.com/JoseLG03/-Master-Javascript-Udemy#readme"
+}
