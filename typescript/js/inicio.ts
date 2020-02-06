@@ -34,6 +34,14 @@ class Camiseta{
     private talla: string = "";
     private precio: number = 0;
 
+    constructor(color: string, marca: string, modelo:string, talla:string, precio: number){
+        this.color = color;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.talla = talla;
+        this.precio = precio;
+    }
+
     public setColor(color:string) {
         this.color = color;
     }
@@ -43,7 +51,9 @@ class Camiseta{
     }
 }
 
-let playera = new Camiseta();
+let playera = new Camiseta("Amarillo", "American Eagle", "Manga corta","Small", 150);
+
+console.log(playera);
 
 playera.setColor("Verde");
 
