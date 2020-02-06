@@ -1,4 +1,17 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 /*
 let cadena: string | number= "Hola mundo";
 // let cualquiera: any = "";
@@ -23,9 +36,7 @@ camiseta.talla = "L";
 camiseta.precio = 120;
 
 */
-//clase: molde del objeto
-//propiedades: caracteristicas del objeto
-//metodos: funciones o acciones del objeto
+;
 var Camiseta = /** @class */ (function () {
     function Camiseta(color, marca, modelo, talla, precio) {
         this.color = "";
@@ -41,13 +52,43 @@ var Camiseta = /** @class */ (function () {
     }
     Camiseta.prototype.setColor = function (color) {
         this.color = color;
+        return color;
     };
     Camiseta.prototype.getColor = function () {
         return this.color;
     };
     return Camiseta;
 }());
-var playera = new Camiseta("Amarillo", "American Eagle", "Manga corta", "Small", 150);
+/*
+let playera = new Camiseta("Amarillo", "American Eagle", "Manga corta","Small", 150);
+
 console.log(playera);
+
 playera.setColor("Verde");
+
 console.log(playera.getColor());
+*/
+var camiseta_chivas = new Camiseta("Rojiblanca", "Chivas", "Deportiva", "Chica", 800);
+console.log(camiseta_chivas);
+//clase hija
+var Sudadera = /** @class */ (function (_super) {
+    __extends(Sudadera, _super);
+    function Sudadera() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.capucha = false;
+        return _this;
+    }
+    Sudadera.prototype.setCapucha = function (capucha) {
+        this.capucha = capucha;
+    };
+    ;
+    Sudadera.prototype.getCapucha = function () {
+        return this.capucha;
+    };
+    return Sudadera;
+}(Camiseta));
+;
+var sudadera_chivas = new Sudadera("Rojiblanca", "Chivas", "manga larga", "mediana", 500);
+sudadera_chivas.setColor("Naranja");
+sudadera_chivas.setCapucha(true);
+console.log(sudadera_chivas);

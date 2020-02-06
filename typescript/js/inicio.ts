@@ -26,8 +26,15 @@ camiseta.precio = 120;
 //clase: molde del objeto
 //propiedades: caracteristicas del objeto
 //metodos: funciones o acciones del objeto
+//interface: propiedad y metodos obligatorios para una clase
+//herencia:una clase hija hereda una clase padre 
 
-class Camiseta{
+interface CamisetaBase{
+    setColor(color: string):string;
+    getColor():string;
+};
+
+class Camiseta implements CamisetaBase{
     private color: string = "";
     private marca: string = "";
     private modelo: string = "";
@@ -42,15 +49,16 @@ class Camiseta{
         this.precio = precio;
     }
 
-    public setColor(color:string) {
+    public setColor(color:string):string {
         this.color = color;
+        return color;
     }
 
     public getColor() {
         return this.color;
     }
 }
-
+/*
 let playera = new Camiseta("Amarillo", "American Eagle", "Manga corta","Small", 150);
 
 console.log(playera);
@@ -58,3 +66,30 @@ console.log(playera);
 playera.setColor("Verde");
 
 console.log(playera.getColor());
+*/
+
+let camiseta_chivas = new Camiseta("Rojiblanca", "Chivas", "Deportiva", "Chica", 800);
+
+console.log(camiseta_chivas);
+
+//clase hija
+
+class Sudadera extends Camiseta{
+
+    public capucha: boolean = false;
+
+    setCapucha(capucha:boolean){
+        this.capucha = capucha;
+    };
+
+    getCapucha():boolean{
+        return this.capucha;
+    }
+};
+
+let sudadera_chivas = new Sudadera("Rojiblanca", "Chivas", "manga larga", "mediana", 500);
+
+sudadera_chivas.setColor("Naranja");
+sudadera_chivas.setCapucha(true);
+
+console.log(sudadera_chivas);

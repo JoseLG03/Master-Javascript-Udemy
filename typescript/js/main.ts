@@ -1,3 +1,8 @@
-let numero: number = 88;
+//import{Camiseta} from "./camiseta";
+class Main{
+    constructor(){
+        console.log("Aplicación JS cargada");
+    }
+}
 
-console.log(numero);
+var main = new Main();
