@@ -28,13 +28,25 @@ camiseta.precio = 120;
 //metodos: funciones o acciones del objeto
 //interface: propiedad y metodos obligatorios para una clase
 //herencia:una clase hija hereda una clase padre 
+//decoradores: un patron de diseño mediante metadatos hacer una copia de clase de acuerdo a los metadatos que les pasemos
 
 interface CamisetaBase{
     setColor(color: string):string;
     getColor():string;
 };
 
+
+function estampar(logo:string){
+    return function(target: Function){
+        target.prototype.estampado = function():void{
+            console.log("Camiseta estampada con el logo "+logo);
+        }
+    }
+}
+
+@estampar("LV")
 class Camiseta implements CamisetaBase{
+    
     private color: string = "";
     private marca: string = "";
     private modelo: string = "";
@@ -58,22 +70,19 @@ class Camiseta implements CamisetaBase{
         return this.color;
     }
 }
-/*
+
 let playera = new Camiseta("Amarillo", "American Eagle", "Manga corta","Small", 150);
+playera.estampado();
 
 console.log(playera);
 
 playera.setColor("Verde");
 
 console.log(playera.getColor());
-*/
 
 let camiseta_chivas = new Camiseta("Rojiblanca", "Chivas", "Deportiva", "Chica", 800);
 
-console.log(camiseta_chivas);
-
 //clase hija
-
 class Sudadera extends Camiseta{
 
     public capucha: boolean = false;
@@ -91,5 +100,6 @@ let sudadera_chivas = new Sudadera("Rojiblanca", "Chivas", "manga larga", "media
 
 sudadera_chivas.setColor("Naranja");
 sudadera_chivas.setCapucha(true);
+
 
 console.log(sudadera_chivas);
