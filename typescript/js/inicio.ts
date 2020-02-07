@@ -72,7 +72,7 @@ class Camiseta implements CamisetaBase{
 }
 
 let playera = new Camiseta("Amarillo", "American Eagle", "Manga corta","Small", 150);
-playera.estampado();
+//playera.estampado();
 
 console.log(playera);
 

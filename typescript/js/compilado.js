@@ -76,7 +76,7 @@ var Camiseta = /** @class */ (function () {
     return Camiseta;
 }());
 var playera = new Camiseta("Amarillo", "American Eagle", "Manga corta", "Small", 150);
-playera.estampado();
+//playera.estampado();
 console.log(playera);
 playera.setColor("Verde");
 console.log(playera.getColor());
