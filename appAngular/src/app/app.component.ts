@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title = 'Mi primera app con Angular';
+  
+  public mostrarVideojuegos: boolean = true;
+
+  ocultarVideojuegos(value){
+    this.mostrarVideojuegos = value;
+  }
 }
