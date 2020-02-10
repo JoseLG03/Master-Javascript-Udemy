@@ -1,7 +1,11 @@
-<h2>Bienvenido</h2>
-<span>{{ title }} esta listo!</span>
-<zapatos></zapatos>
-<button (click) = "ocultarVideojuegos(false)" *ngIf = "mostrarVideojuegos">Ocultar</button>
-<videojuego *ngIf = "mostrarVideojuegos"></videojuego>   
-<button (click) = "ocultarVideojuegos(true)" *ngIf = "!mostrarVideojuegos">Mostrar Videojuegos</button> 
-<app-cursos></app-cursos>
+<div [ngStyle]="{'background': config.color}">
+    <h2>Bienvenido</h2>
+    <span>{{ title }} esta lista!</span>
+    <br>
+    <span>{{ descripcion }}</span>
+    <zapatos></zapatos>
+    <button (click) = "ocultarVideojuegos(false)" *ngIf = "mostrarVideojuegos">Ocultar</button>
+    <videojuego *ngIf = "mostrarVideojuegos"></videojuego>   
+    <button (click) = "ocultarVideojuegos(true)" *ngIf = "!mostrarVideojuegos">Mostrar Videojuegos</button> 
+    <app-cursos></app-cursos>
+</div>
