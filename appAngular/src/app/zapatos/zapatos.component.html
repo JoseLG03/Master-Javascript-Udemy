@@ -1,2 +1,6 @@
 <h2>{{titulo}}</h2>
-<p>Hola mundo.</p>
+<ul>
+    <li *ngFor = "let tenis of zapatos_array">
+        {{tenis.nombre}} - <strong>{{tenis.precio}}</strong>
+    </li>
+</ul>
