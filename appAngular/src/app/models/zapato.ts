@@ -15,9 +15,8 @@ export class Zapato{
    constructor(
         public nombre: string,
         public precio: number,
+        public marca: string,
         public color: string,
         public stock: boolean){
-
     };
-   
 };

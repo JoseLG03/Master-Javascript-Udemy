@@ -1,9 +1,18 @@
 <h2>{{titulo}}</h2>
+<p>Compra solo las mejores marcas</p>
+<ul>
+    <li *ngFor = "let marcas of marcas">
+        {{marcas}}
+    </li>
+</ul>
+<p>Modelos disponibles</p>
 <ul>
     <li *ngFor = "let tenis of zapatos_array">
-        {{tenis.nombre}} - <strong>{{tenis.precio}}$</strong>
-    <span *ngIf= "tenis.precio < 750" [style.background] = "tenis.precio < 750 ? 'red': 'transparent'">
-          ¡En Oferta!
-    </span>
+        <span [ngStyle] = "{'text-decoration': !tenis.stock ? 'line-through': 'none'}">
+            {{tenis.nombre}} - <strong>{{tenis.precio}}$</strong>
+        </span>
+            <span *ngIf= "tenis.precio < 750" [style.background] = "tenis.precio < 750 ? 'red': 'transparent'">
+                ¡En Oferta!
+            </span>
     </li>
 </ul>
