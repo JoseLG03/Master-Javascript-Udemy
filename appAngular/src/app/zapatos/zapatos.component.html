@@ -16,3 +16,18 @@
             </span>
     </li>
 </ul>
+<span>El colo de nuestros tenis es:</span>
+<ul [ngSwitch] = "color">
+    <li *ngSwitchCase = "'blue'">
+        El color predominantes es <span [ngStyle]="{'background':color}">Azul.</span>
+    </li>
+    <li *ngSwitchCase = "'red'">
+        El color predominantes es <span [ngStyle]="{'background':color}">Rojo.</span>
+    </li>
+    <li *ngSwitchCase = "'green'">
+        El color predominantes es <span [ngStyle]="{'background':color}">Verde.</span>
+    </li>
+    <li *ngSwitchCase = "'white'">
+        El color predominantes es <span [ngStyle]="{'background':color}">Blanco.</span>
+    </li>
+</ul>

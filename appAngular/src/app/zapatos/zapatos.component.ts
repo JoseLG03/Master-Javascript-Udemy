@@ -9,8 +9,10 @@ export class ZapatosComponent implements OnInit{
     public titulo: string;
     public zapatos_array: Array<Zapato>;
     public marcas : string[];
+    public color: string;
 
     constructor() {
+        this.color = 'green';
         this.titulo = "Componente de zapatos";
         this.marcas = new Array;
         this.zapatos_array = [
