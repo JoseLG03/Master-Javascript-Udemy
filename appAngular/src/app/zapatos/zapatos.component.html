@@ -9,7 +9,7 @@
 <p>Le sugerimos la marca: {{miMarca}}.</p>
 <p>Añadir marca</p>
 <p>
-    <input type="text" [(ngModel)] = "miMarca" />
+    <input type="text" [(ngModel)] = "miMarca" (keyup.enter)="mostrarPalabra()"/>
 </p>
 <button (click)="getMarca()">Mostrar marca.</button>
 <br>

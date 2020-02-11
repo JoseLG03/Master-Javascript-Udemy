@@ -37,15 +37,23 @@ export class ZapatosComponent implements OnInit{
 
     getMarca(){
         alert(this.miMarca);
-    }
+    };
 
     addMarca(){
         this.marcas.push(this.miMarca);
-    }
+    };
 
-    borrarMarca(index){
+    borrarMarca(index: number){
         //delete this.marcas[index];
         this.marcas.splice(index, 1);
+    };
+
+    onBlur(){
+        console.log("Efecto blur");
+    };
+
+    mostrarPalabra(){
+        alert(this.miMarca);
     }
 
     ngOnInit(){
