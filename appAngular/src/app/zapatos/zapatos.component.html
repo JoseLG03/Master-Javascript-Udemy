@@ -1,6 +1,9 @@
 <h2>{{titulo}}</h2>
 <ul>
     <li *ngFor = "let tenis of zapatos_array">
-        {{tenis.nombre}} - <strong>{{tenis.precio}}</strong>
+        {{tenis.nombre}} - <strong>{{tenis.precio}}$</strong>
+    <span *ngIf= "tenis.precio < 750" [style.background] = "tenis.precio < 750 ? 'red': 'transparent'">
+          ¡En Oferta!
+    </span>
     </li>
 </ul>
