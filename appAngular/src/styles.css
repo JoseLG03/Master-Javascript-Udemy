@@ -3,3 +3,11 @@
     color: gray;
     font-size: 18px;
   }
+
+.fondoRojo{
+    background: orange;
+} 
+
+.subrayado{
+    text-decoration: underline;
+}
