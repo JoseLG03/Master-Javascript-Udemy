@@ -25,6 +25,7 @@
     </li>
 </ul>
 <span>El colo de nuestros tenis es:</span>
+<input type="text" [(ngModel)]="color" />
 <ul [ngSwitch] = "color">
     <li *ngSwitchCase = "'blue'">
         El color predominantes es <span [ngStyle]="{'background':color}">Azul.</span>
