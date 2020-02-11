@@ -1,8 +1,9 @@
 <h2>{{titulo}}</h2>
 <p>Compra solo las mejores marcas</p>
 <ul>
-    <li *ngFor = "let marcas of marcas">
+    <li *ngFor = "let marcas of marcas; let index= index">
         {{marcas}}
+        <button (click)="borrarMarca(index)">Borrar</button>
     </li>
 </ul>
 <p>Le sugerimos la marca: {{miMarca}}.</p>

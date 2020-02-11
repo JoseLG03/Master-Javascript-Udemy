@@ -43,6 +43,11 @@ export class ZapatosComponent implements OnInit{
         this.marcas.push(this.miMarca);
     }
 
+    borrarMarca(index){
+        //delete this.marcas[index];
+        this.marcas.splice(index, 1);
+    }
+
     ngOnInit(){
         this.getMarcas();
         console.log(this.zapatos_array);
