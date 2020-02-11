@@ -10,8 +10,10 @@ export class ZapatosComponent implements OnInit{
     public zapatos_array: Array<Zapato>;
     public marcas : string[];
     public color: string;
+    public miMarca:string;
 
     constructor() {
+        this.miMarca = "Jordan";
         this.color = 'green';
         this.titulo = "Componente de zapatos";
         this.marcas = new Array;
@@ -32,6 +34,14 @@ export class ZapatosComponent implements OnInit{
         });
         console.log(this.marcas);
     };
+
+    getMarca(){
+        alert(this.miMarca);
+    }
+
+    addMarca(){
+        this.marcas.push(this.miMarca);
+    }
 
     ngOnInit(){
         this.getMarcas();

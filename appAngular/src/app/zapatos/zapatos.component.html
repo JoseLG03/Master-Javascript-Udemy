@@ -5,6 +5,14 @@
         {{marcas}}
     </li>
 </ul>
+<p>Le sugerimos la marca: {{miMarca}}.</p>
+<p>Añadir marca</p>
+<p>
+    <input type="text" [(ngModel)] = "miMarca" />
+</p>
+<button (click)="getMarca()">Mostrar marca.</button>
+<br>
+<button (click)="addMarca()">Añadir marca.</button>
 <p>Modelos disponibles</p>
 <ul>
     <li *ngFor = "let tenis of zapatos_array">
