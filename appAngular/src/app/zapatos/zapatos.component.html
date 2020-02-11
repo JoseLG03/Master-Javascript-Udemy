@@ -18,7 +18,8 @@
 <ul>
     <li *ngFor = "let tenis of zapatos_array">
         <span [ngStyle] = "{'text-decoration': !tenis.stock ? 'line-through': 'none'}">
-            {{tenis.nombre}} - <strong>{{tenis.precio}}$</strong>
+            {{tenis.nombre}} - <strong [class.altoPrecio]="tenis.precio >= 750">
+            {{tenis.precio}}$</strong>
         </span>
             <span *ngIf= "tenis.precio < 750" [style.background] = "tenis.precio < 750 ? 'red': 'transparent'">
                 ¡En Oferta!
