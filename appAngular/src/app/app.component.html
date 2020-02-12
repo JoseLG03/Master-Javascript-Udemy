@@ -1,10 +1,20 @@
 <div [ngStyle]="{'background': config.color}">
     <h2>Bienvenido</h2>
-    <span>{{ title }} esta lista!</span>
     <!--
     <span>{{ descripcion }}</span>
     -->
-    <zapatos></zapatos>
+    <span>Menu de navegación:</span>
+    <nav>
+        <a [routerLink]= "['/home']" [routerLinkActive]="['active']">Home</a>
+        &nbsp;
+        <a [routerLink]= "['/zapatos']" [routerLinkActive]="['active']">Zapatos</a>
+        &nbsp;
+        <a [routerLink]= "['/videojuegos']" [routerLinkActive]="['active']">Videojuegos</a>
+        &nbsp;
+        <a [routerLink]= "['/cursos']" [routerLinkActive]="['active']">Cursos</a>
+    </nav>
+    <hr>
+   <router-outlet></router-outlet>
     <!--
     <button (click) = "ocultarVideojuegos(false)" *ngIf = "mostrarVideojuegos">Ocultar</button>
     <videojuego *ngIf = "mostrarVideojuegos"></videojuego>   
