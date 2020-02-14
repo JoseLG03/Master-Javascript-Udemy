@@ -21,4 +21,8 @@ export class CursosComponent implements OnInit {
       console.log(params.nombre);  
     })
   }
+
+  redirigir(){
+    this._router.navigate(['/zapatos']);
+  }
 }
