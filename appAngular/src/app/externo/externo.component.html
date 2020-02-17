@@ -1,4 +1,4 @@
-{{fecha | date:'dd/MM/yy'}}
+{{"La fecha es:" | lowercase}} {{fecha | date:'dd/MM/yy'}}
 <hr>
 <input type="text" [(ngModel)]="userID" (keyup.enter)="cargaUsuario()" />
 <div *ngIf ='!user'>
@@ -8,3 +8,4 @@
     <img src="{{user.avatar}}" width="100px"/>
     <h2>{{user.first_name+" "+ user.last_name+" "+user.email }}</h2>
 </div>
+{{4 | calculadora: 2}}

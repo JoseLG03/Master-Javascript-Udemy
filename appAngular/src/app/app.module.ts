@@ -11,6 +11,7 @@ import {ZapatosComponent} from './zapatos/zapatos.component';
 import { CursosComponent } from './cursos/cursos.component';
 import {HomeComponent} from './home/home.component';
 import { ExternoComponent } from './externo/externo.component';
+import {CaculadoraPipe} from '../app/pipes/calculadora.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ExternoComponent } from './externo/externo.component';
     VideojuegoComponent,
     ZapatosComponent,
     CursosComponent,
-    ExternoComponent
+    ExternoComponent,
+    CaculadoraPipe
   ],
   imports: [
     FormsModule,
