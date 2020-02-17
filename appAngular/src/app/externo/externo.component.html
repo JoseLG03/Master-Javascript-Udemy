@@ -1,4 +1,9 @@
+{{fecha | date:'dd/MM/yy'}}
+<hr>
 <input type="text" [(ngModel)]="userID" (keyup.enter)="cargaUsuario()" />
+<div *ngIf ='!user'>
+    <p>cargando...</p>
+</div>
 <div *ngIf ='user'>
     <img src="{{user.avatar}}" width="100px"/>
     <h2>{{user.first_name+" "+ user.last_name+" "+user.email }}</h2>
