@@ -1,5 +1,5 @@
 <h2>{{titulo}}</h2>
-<p>Compra solo las mejores marcas</p>
+<p>Compra solo las mejores marcas:</p>
 <ul>
     <li *ngFor = "let marcas of marcas; let index= index">
         {{marcas}}
@@ -14,7 +14,7 @@
 <button (click)="getMarca()">Mostrar marca.</button>
 <br>
 <button (click)="addMarca()">Añadir marca.</button>
-<p>Modelos disponibles</p>
+<p>Modelos disponibles:</p>
 <ul>
     <li *ngFor = "let tenis of zapatos_array">
         <span [ngStyle] = "{'text-decoration': !tenis.stock ? 'line-through': 'none'}">
