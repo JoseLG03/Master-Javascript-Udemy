@@ -9,6 +9,7 @@ import {VideojuegoComponent} from './videojuego/videojuego.component';
 import {ZapatosComponent} from './zapatos/zapatos.component';
 import { CursosComponent } from './cursos/cursos.component';
 import {HomeComponent} from './home/home.component';
+import { ExternoComponent } from './externo/externo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {HomeComponent} from './home/home.component';
     HomeComponent,
     VideojuegoComponent,
     ZapatosComponent,
-    CursosComponent
+    CursosComponent,
+    ExternoComponent
   ],
   imports: [
     FormsModule,
