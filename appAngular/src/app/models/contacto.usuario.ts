@@ -1,4 +1,4 @@
-export class Usuario{
+export class ContactoUsuario{
     constructor(
         public nombre:string,
         public apellidos:string,

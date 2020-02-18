@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Usuario} from '../models/usuario';
+import { ContactoUsuario } from '../models/contacto.usuario';
 
 @Component({
   selector: 'contacto',
@@ -8,9 +8,16 @@ import {Usuario} from '../models/usuario';
 })
 export class ContactoComponent implements OnInit {
 
-  constructor() { }
+  public usuario: ContactoUsuario;
+
+  constructor() {
+    this.usuario = new ContactoUsuario('','','','');
+  }
 
   ngOnInit(): void {
   }
 
+  enviarForm(){
+    console.log("Formulario enviado");
+  }
 }

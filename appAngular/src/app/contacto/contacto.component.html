@@ -1,1 +1,12 @@
-<p>contacto works!</p>
+<h2>Contacto</h2>
+<form #formContacto="ngForm" (ngSubmit)="enviarForm()">
+    <label for="nombre" #nombre="ngModel">Nombre:</label><br>
+    <input type="text" name="nombre" /><br>
+    <label for="apellido" #apellido="ngModel">Apellido:</label><br>
+    <input type="text" name="apellido" /><br>
+    <label for="email" #email="ngModel">E-mail:</label><br>
+    <input type="text" name="email" /><br>
+    <label for="mensaje" #mensaje="ngModel">Mensaje:</label><br>
+    <textarea name="mensaje"></textarea><br>
+    <input type="submit" value="Enviar">
+</form>
