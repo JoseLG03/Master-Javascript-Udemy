@@ -1,5 +1,4 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import { Transform } from 'stream';
 
 @Pipe({
     name:'calculadora'
