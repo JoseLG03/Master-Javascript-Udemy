@@ -12,6 +12,7 @@ import { CursosComponent } from './cursos/cursos.component';
 import {HomeComponent} from './home/home.component';
 import { ExternoComponent } from './externo/externo.component';
 import {CaculadoraPipe} from '../app/pipes/calculadora.pipe';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {CaculadoraPipe} from '../app/pipes/calculadora.pipe';
     ZapatosComponent,
     CursosComponent,
     ExternoComponent,
-    CaculadoraPipe
+    CaculadoraPipe,
+    ContactoComponent
   ],
   imports: [
     FormsModule,
