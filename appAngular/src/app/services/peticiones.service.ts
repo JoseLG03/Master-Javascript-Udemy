@@ -13,4 +13,11 @@ export class PeticionesService{
     getUsers(userID):Observable<any> {
         return this._http.get(this.url+'api/users/'+userID);
     }    
+
+    addUser(user):Observable<any>{
+        let params =JSON.stringify(user);
+        let header = new HttpHeaders().set('Content-type', 'application/json')
+
+        return this._http.post(this.url+'api/users', params,{headers:header})
+    }
 };
