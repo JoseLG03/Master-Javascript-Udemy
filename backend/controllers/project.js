@@ -36,6 +36,24 @@ let controller ={
 
             return res.status(200).send({project:projectStored});
         });
+    },
+    getProject:function(req,res){
+        let projectID = req.params.id;
+
+        if(projectID==null){
+            return res.status(400).send({message:'El proyecto no existe'}); 
+        };
+
+        Project.findById(projectID,(err,project) =>{
+            if(err){
+                return res.status(500).send({message: 'Error al obtener los datos.'});
+            }
+            if(!project){
+                return res.status(404).send({message: 'No se ha podido obtener el proyecto'});
+           };
+
+           return res.status(200).send({project});
+        });
     }
 };
 
