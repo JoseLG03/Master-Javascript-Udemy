@@ -65,6 +65,37 @@ let controller ={
            };
            return res.status(200).send({projects});
         });       
+    },
+    updateProject: function(req,res){
+        let projectID = req.params.id;
+        let update = req.body;
+
+        Project.findByIdAndUpdate(projectID, update,{new:true},(err, projectUpdate)=>{
+            if(err){
+                return res.status(500).send({message: 'Error al actualizar.'});
+            }
+            if(!projectUpdate){
+                return res.status(404).send({message: 'No existe el proyecto para actualizar.'});
+           };
+           return res.status(200).send({
+               project:projectUpdate
+            });
+        } );
+    },
+    deleteProject:function(req,res){
+        let deleteProject = req.params.id;
+        
+        Project.findOneAndDelete(deleteProject,(err,projectRemoved)=>{
+            if(err){
+                return res.status(500).send({message: 'Error al borrar.'});
+            }
+            if(!projectRemoved){
+                return res.status(404).send({message: 'No existe el proyecto para eliminar.'});
+           };
+           return res.status(200).send({
+               project:projectRemoved
+            });
+        });
     }
 };
 
