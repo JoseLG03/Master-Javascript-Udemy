@@ -54,6 +54,17 @@ let controller ={
 
            return res.status(200).send({project});
         });
+    },
+    getProjects:function(req,res){
+        Project.find({}).sort('year').exec((err,projects)=>{
+            if(err){
+                return res.status(500).send({message: 'Error al obtener los proyectos.'});
+            }
+            if(!projects){
+                return res.status(404).send({message: 'No se han podido obtener los proyectos.'});
+           };
+           return res.status(200).send({projects});
+        });       
     }
 };
 
