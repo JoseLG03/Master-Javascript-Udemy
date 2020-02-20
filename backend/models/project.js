@@ -8,7 +8,8 @@ let projectSchema = schema({
     description: String,
     category: String,
     year: Number,
-    langs:[String]
+    langs: String,
+    img: String,
 });
 
 module.exports = mongus.model('Project', projectSchema);
