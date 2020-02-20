@@ -6,7 +6,7 @@ let bodyParser = require('body-parser');
 let app = express();
 
 //archivos de rutas
-
+let project_routes = require('./routes/project');
 
 
 //middlewares
@@ -17,13 +17,8 @@ app.use(bodyParser.json());
 
 
 //rutas
-app.get('/',(req, res)=>{
-    res.status(200).send("<h3>Inicio</h3>");
-});
+app.use('/',project_routes);
 
-app.get('/test',(req, res)=>{
-    res.status(200).send({message:"Hola mundo desde la api de NodeJS"});
-});
 
 //exportar
 module.exports = app;
