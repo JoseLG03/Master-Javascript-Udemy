@@ -1,6 +1,7 @@
 'use strict'
 
 let Project = require('../models/project');
+let fs = require('fs');
 
 let controller ={
     home: function(req, res){
@@ -84,7 +85,7 @@ let controller ={
     },
     deleteProject:function(req,res){
         let deleteProject = req.params.id;
-        
+
         Project.findOneAndDelete(deleteProject,(err,projectRemoved)=>{
             if(err){
                 return res.status(500).send({message: 'Error al borrar.'});
@@ -96,7 +97,42 @@ let controller ={
                project:projectRemoved
             });
         });
+    },
+    uploadImg:function(req,res){
+        let projectID = req.params.id;
+        let fileName = 'Imagen no subida...';
+
+        if(req.files){
+
+            let filePath = req.files.img.path;
+            let fileSplit = filePath.split('\\');
+            let fileName = fileSplit[1];
+            let extSplit = fileName.split('.');
+            let fileExt = extSplit[1];
+
+            if(fileExt == "jpg" || fileExt == "png" || fileExt == "gif" || fileExt == "jpge" ){
+                Project.findByIdAndUpdate(projectID, {img: fileName}, {new:true}, (err,projectUpdate)=>{
+                    if(err){
+                        return res.status(200).send({message: 'Error al cargar imagen.'});
+                    }
+                    if(!projectUpdate){
+                        return res.status(404).send({message: 'No existe el proyecto para cargar la imagen.'});
+                    }; 
+                    return res.status(200).send({
+                        project: projectUpdate
+                    });
+                });
+            }else{
+                fs.unlink(filePath,(err)=>{
+                    return res.status(400).send({message: 'Extencion no valida'});
+                });
+            }
+        }else{
+            return res.status(404).send({
+                message:fileName
+            })
+        }    
     }
-};
+}
 
 module.exports = controller;
