@@ -3,7 +3,7 @@
 let mongus = require("mongoose");
 let schema = mongus.Schema;
 
-let projectSchema = Schema({
+let projectSchema = schema({
     name: String,
     description: String,
     category: String,

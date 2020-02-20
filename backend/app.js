@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 
 //rutas
-app.use('/',project_routes);
+app.use('/', project_routes);
 
 
 //exportar

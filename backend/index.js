@@ -5,7 +5,7 @@ let app = require('./app');
 let port = 3700;
 
 mongus.Promise = global.Promise;
-mongus.connect('mongodb://localhost:27017/portafolio')
+mongus.connect('mongodb://localhost:27017/portafolio', { useNewUrlParser: true , useUnifiedTopology: true})
       .then(()=>{
           console.log("Conexión exitosa");
           
