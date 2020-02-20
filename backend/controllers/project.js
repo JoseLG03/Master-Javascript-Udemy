@@ -26,7 +26,6 @@ let controller ={
         project.img = null;
 
         project.save((err, projectStored)=>{
-
             if(err){ 
                 return res.status(500).send({message: 'Error en el guardado.'});
             };
@@ -37,10 +36,6 @@ let controller ={
 
             return res.status(200).send({project:projectStored});
         });
-
-        return res.status(200).send({
-            message: "Metodo saveProject"
-        })
     }
 };
 
