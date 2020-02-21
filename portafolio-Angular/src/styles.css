@@ -21,4 +21,6 @@
 body{
     font-family: "monse", Arial, Helvetica, sans-serif;
     font-size: 20px;
+    background: url('./assets/img/dust_scratches.png');
+    background-repeat: repeat;
 }
