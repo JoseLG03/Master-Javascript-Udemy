@@ -1,8 +1,19 @@
-<h1>Proyecto Angular</h1>
-<ul>
-  <li><a [routerLink]="['/sobre-mi']">Sobre mi</a></li>
-  <li><a [routerLink]="['/proyectos']">Proyectos</a></li>
-  <li><a [routerLink]="['/crear-proyecto']">Crear Proyecto</a></li>
-  <li><a [routerLink]="['/contacto']">Contacto</a></li>
-</ul>
-<router-outlet></router-outlet>
+<header>
+  <div id="div_header_logo">
+    <img id="logo" src="../assets/img/18fa6323-133e-4276-a96a-a30c15d6e532_200x200_opt.png" />
+  </div>
+  <div id="div_header_lista">
+    <ul>
+      <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre mi</a></li>
+      <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a></li>
+      <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Crear Proyecto</a></li>
+      <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+<footer>
+  <h3>Master en Javascript de José López Guerrero.</h3>
+</footer>
