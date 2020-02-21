@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+/*Importar fuentes*/
+@font-face{
+    font-family: "monse";
+    src: url('./assets/fonts/MontserratAlternates-Medium.otf');
+}
+@font-face{
+    font-family: "roboto";
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: "yanone";
+    src: url('./assets/fonts/YanoneKaffeesatz-Regular.ttf');
+}
+
+/*Estilos generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "monse", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
