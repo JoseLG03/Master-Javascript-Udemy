@@ -1,0 +1,51 @@
+/*About component*/
+#title{
+    width: 80%;
+    margin: 0px auto; 
+    text-align: justify;
+    margin-bottom: auto;
+    margin-top: 5%;
+}
+#title h1{
+    font-family: 'roboto';
+    font-size: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    text-align: center;
+}
+#title h2{
+    font-family: 'roboto';
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color:#9ea7aa;
+}
+#title p{
+    font-family: 'roboto';
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color:#9ea7aa;
+}
+
+article.about{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
