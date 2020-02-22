@@ -1,6 +1,8 @@
 <header>
   <div id="div_header_logo">
-    <img id="logo" src="../assets/img/18fa6323-133e-4276-a96a-a30c15d6e532_200x200_opt.png" />
+    <a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">
+      <img id="logo" src="../assets/img/18fa6323-133e-4276-a96a-a30c15d6e532_200x200_opt.png" />
+    </a>
   </div>
   <div id="div_header_lista">
     <ul>
@@ -15,5 +17,5 @@
   <router-outlet></router-outlet>
 </section>
 <footer>
-  <h4>Master en Javascript de José López Guerrero.</h4>
+  <p><strong>Master en Javascript de José López Guerrero.</strong></p>
 </footer>
