@@ -28,9 +28,9 @@
         </p>
         <p>
             <label for="img">Imagen del proyecto:</label>
-            <input type="file" name="img"  placeholder="subir imagen" class="form_error"/>
+            <input type="file" name="img"  placeholder="subir imagen"/>
         </p>
-        <input type="submit" value="Enviar"/>
+        <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
     </form>
 </section>
 

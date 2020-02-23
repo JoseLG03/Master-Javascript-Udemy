@@ -1,17 +1,19 @@
 .container{
+    display:block;
     padding : 20px;
     padding-top: 30px;
 }
 
 .container h2{
-    display:block;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
     margin-top: 15px;
+    text-align: center;
 }
 
 form{
     width: 80%;
+    align-content: center;
 }
 
 form label{
@@ -60,7 +62,3 @@ form input[type="submit"]:hover{
     margin-left: 5px;
 }
 
-#lateral{
-    width: 20%;
-    float: left;
-}
