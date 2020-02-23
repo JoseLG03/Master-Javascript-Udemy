@@ -1,0 +1,66 @@
+.container{
+    padding : 20px;
+    padding-top: 30px;
+}
+
+.container h2{
+    display:block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+form{
+    width: 80%;
+}
+
+form label{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+    width: 60%;
+    padding: 5px;
+}
+
+form button,
+form input[type="submit"]{
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 15px;
+    background:  #24292e;
+    color:white;
+    border: 1px solid  #ced7ce;
+}
+
+form button:hover,
+form input[type="submit"]:hover{
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 15px;
+    background: #9da6a9;
+    color:white;
+    border: 1px solid  #ced7ce;
+}
+
+.form_error{
+    font-size: 15px;
+    padding:5px;
+    background:#c62828;
+    color:#ffffff;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+#lateral{
+    width: 20%;
+    float: left;
+}

@@ -81,7 +81,7 @@ header ul li a{
 
 header ul li a:hover{
     background: rgba(0, 0, 0,0.8);
-    color: #9da6a9;
+    color: #ffffff;
 }
 
 #logo{
@@ -105,7 +105,7 @@ transition: transform 500ms;
 #content{
     width: 75%;
     margin: 0px auto;
-    background: rgba(255, 255, 255,0.6);
+    background: #ffffff;
     padding: 70px;
     border-left: 1px solid #b7b7b7;
     border-right: 1px solid #b7b7b7;
@@ -119,6 +119,7 @@ footer{
     margin-bottom: 20px;
     text-align: right;
     color: rgba(0, 0, 0,0.5);
+    font-size: 18px;
 }
 
 

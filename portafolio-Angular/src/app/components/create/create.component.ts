@@ -17,10 +17,10 @@ export class CreateComponent implements OnInit {
     private _projectService: ProjectService) {
       this.tittle = "Crear proyecto";
       this.project = new Project(
-        '','','','',null,'',''
+        '','','','',2020,'',''
       );
      }
-  onSubmmit(form){
+  onSubmit(form){
     console.log(this.project);
   }   
   ngOnInit(): void {
