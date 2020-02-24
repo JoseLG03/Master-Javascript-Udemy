@@ -113,13 +113,53 @@ transition: transform 500ms;
 }
 
 footer{
-    width: 85%;
     margin: 0px auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: right;
-    color: rgba(0, 0, 0,0.5);
     font-size: 18px;
+    height: 100%;     
+    color: #ffffff;
+    text-align: left;
 }
 
+#footer_name{
+    display:block; 
+    width: 50%;
+    float: left;
+    height: 100%;       
+    margin: 0px auto;
+    background: #24292e;
+}
 
+#footer_name p{
+    line-height: 90px;
+    padding-left: 120px;
+}
+
+#footer_links{
+    display:block;    
+    width: 50%;
+    float: right;
+    height: 100%;
+    background: #24292e;
+}
+
+#footer_links ul{
+    display: block;
+    width: 60%;
+    height: inherit;
+    margin: 0px auto;
+}
+
+#footer_links ul li{
+    display: initial;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 90px;
+}
+
+#footer_links ul li a{
+    display: initial;
+    padding-right: 20px;
+    padding-left: 30px;
+    height: inherit;
+    color: white;
+}

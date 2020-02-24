@@ -40,8 +40,12 @@ form input[type="submit"]{
     background:  #24292e;
     color:white;
     border: 1px solid  #ced7ce;
+    cursor: pointer;
+    border-color: #ccc;
+    box-shadow: 0 1px 1px  #ced7ce inset, 0 0 8px  #ccc;
+    outline: 0 none;
 }
-
+/*
 form button:hover,
 form input[type="submit"]:hover{
     display: block;
@@ -52,7 +56,12 @@ form input[type="submit"]:hover{
     color:white;
     border: 1px solid  #ced7ce;
 }
+*/
 
+form input[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
 .form_error{
     font-size: 15px;
     padding:5px;
