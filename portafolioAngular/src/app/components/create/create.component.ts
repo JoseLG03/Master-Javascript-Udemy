@@ -22,6 +22,14 @@ export class CreateComponent implements OnInit {
      }
   onSubmit(form){
     console.log(this.project);
+    this._projectService.createService(this.project).subscribe(
+      response =>{
+        console.log(response);
+      },
+      error =>{
+        console.log(<any>error);
+      }
+    );
   }   
   ngOnInit(): void {
   }

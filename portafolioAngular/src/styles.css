@@ -30,8 +30,7 @@ body{
 header{
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg,#9ea7aa, #24292e);
-    /*background: #24292e;*/
+    background: #24292e;
     position: relative;
     display: block;
     text-transform: uppercase;
@@ -80,14 +79,13 @@ header ul li a{
 }
 
 header ul li a:hover{
-    background: rgba(0, 0, 0,0.8);
+    background: #b7b7b7;
     color: #ffffff;
 }
 
 #logo{
     margin-top: 10px;
     margin-left: 20px;
-    width:125px;
     height: 70px;
     background:transparent;
     display: block;
@@ -130,9 +128,10 @@ footer{
 }
 
 #footer_name p{
-    line-height: 90px;
-    padding-left: 120px;
+    text-align: center;
+    line-height: 79px;
 }
+
 
 #footer_links{
     display:block;    
@@ -140,6 +139,8 @@ footer{
     float: right;
     height: 100%;
     background: #24292e;
+    /*background: linear-gradient(90deg, #47515a, #24292e);*/
+    line-height: 50px;
 }
 
 #footer_links ul{
@@ -153,13 +154,19 @@ footer{
     display: initial;
     margin: 0px auto;
     text-align: center;
-    line-height: 90px;
+    line-height: 20px;
 }
 
 #footer_links ul li a{
     display: initial;
-    padding-right: 20px;
-    padding-left: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
     height: inherit;
     color: white;
+}
+
+.redesSociales{
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;   
 }

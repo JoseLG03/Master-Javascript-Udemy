@@ -16,4 +16,10 @@ export class ProjectService{
     testService(){
         return "probando el sistema con Angular";
     }
+    createService(project: Project):Observable<any>{
+        let params = JSON.stringify(project);
+        let headers = new HttpHeaders().set('Content-Type','application/json');
+
+        return this._http.post(this.url+'crear-proyecto',params,{headers:headers});
+    }
 }
