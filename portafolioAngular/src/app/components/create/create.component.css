@@ -1,7 +1,8 @@
 .container{
-    display:block;
     padding : 20px;
     padding-top: 30px;
+    width: 70%;
+    float: left;    
 }
 
 .container h2{
@@ -89,4 +90,15 @@ form input[disabled]{
 .failed{
     background: red;
     color: white;
+}
+
+.banner{
+    width: 20%;
+    float: right;
+}
+
+.banner img{
+    margin-top: 50px;
+    width: 150px;
+    height: 500px;
 }

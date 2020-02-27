@@ -1,4 +1,4 @@
-<section class="container">
+<div class="container">
     <h2>{{tittle}}</h2>
     <div class="message succes" *ngIf="status == 'sucess'">
         <p>El proyecto se ha creado correctamente. <a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Ver proyecto.</a></p>
@@ -38,5 +38,7 @@
         </p>
         <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
     </form>
-</section>
-
+</div>
+<div class="banner">
+    <img src="../assets/img/shattered-island.jpg"/>
+</div>
