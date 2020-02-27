@@ -1,5 +1,6 @@
-<div class="container">
+<section class="container">
     <h2>{{tittle}}</h2>
+    <img id="img" src="../assets/img/shattered-island.jpg"/>
     <div class="message succes" *ngIf="status == 'sucess'">
         <p>El proyecto se ha creado correctamente. <a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Ver proyecto.</a></p>
     </div>
@@ -38,7 +39,6 @@
         </p>
         <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
     </form>
-</div>
-<div class="banner">
-    <img src="../assets/img/shattered-island.jpg"/>
-</div>
+</section>
+        
+

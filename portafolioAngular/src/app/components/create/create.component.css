@@ -1,8 +1,8 @@
 .container{
     padding : 20px;
     padding-top: 30px;
-    width: 70%;
-    float: left;    
+    width: 95%;    
+    display: block;
 }
 
 .container h2{
@@ -92,13 +92,9 @@ form input[disabled]{
     color: white;
 }
 
-.banner{
-    width: 20%;
-    float: right;
-}
-
-.banner img{
-    margin-top: 50px;
+#img{
+    margin-top: 10px;
     width: 150px;
-    height: 500px;
+    height: 460px;
+    float: right;
 }
