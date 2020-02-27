@@ -20,6 +20,6 @@ export class ProjectService{
         let params = JSON.stringify(project);
         let headers = new HttpHeaders().set('Content-Type','application/json');
 
-        return this._http.post(this.url+'crear-proyecto',params,{headers:headers});
+        return this._http.post(this.url+'save-project',params,{headers:headers});
     }
 }
