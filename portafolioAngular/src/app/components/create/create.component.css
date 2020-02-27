@@ -71,3 +71,22 @@ form input[disabled]{
     margin-left: 5px;
 }
 
+.message{
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px solid #eee;
+    width: 48%;
+}
+
+.message a{
+    color: #eee;
+}
+.succes{
+    background: #9da6a9;
+    color: #24292e;
+}
+
+.failed{
+    background: red;
+    color: white;
+}

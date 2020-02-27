@@ -1,5 +1,11 @@
 <section class="container">
     <h2>{{tittle}}</h2>
+    <div class="message succes" *ngIf="status == 'sucess'">
+        <p>El proyecto se ha creado correctamente. <a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Ver proyecto.</a></p>
+    </div>
+    <div class="message failed" *ngIf="status == 'failed'">
+        <p>El poyecto NO SE HA PODIDO CREAR.</p>
+    </div>
     <form #projectForm = "ngForm" (ngSubmit) ='onSubmit(projectForm)'>
         <p>
             <label for="name">Nombre:</label>

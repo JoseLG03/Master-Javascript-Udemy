@@ -12,6 +12,7 @@ export class CreateComponent implements OnInit {
 
   public tittle:string;
   public project: Project;
+  public status: string;
 
   constructor(
     private _projectService: ProjectService) {
@@ -21,10 +22,14 @@ export class CreateComponent implements OnInit {
       );
      }
   onSubmit(form){
-    console.log(this.project);
     this._projectService.createService(this.project).subscribe(
       response =>{
-        console.log(response);
+        if(response.project){
+          this.status = 'sucess';
+          form.reset();
+        }else{
+          this.status = 'failed';
+        }
       },
       error =>{
         console.log(<any>error);
