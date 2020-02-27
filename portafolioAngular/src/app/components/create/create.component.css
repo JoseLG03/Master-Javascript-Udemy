@@ -15,6 +15,7 @@
 form{
     width: 80%;
     align-content: center;
+    margin-right: 10px;
 }
 
 form label{
@@ -69,7 +70,7 @@ form input[disabled]{
     background:#c62828;
     color:#ffffff;
     padding: 5px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .message{
@@ -94,6 +95,7 @@ form input[disabled]{
 
 #img{
     margin-top: 10px;
+    margin-left: 10px;
     width: 150px;
     height: 460px;
     float: right;

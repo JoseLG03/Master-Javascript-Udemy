@@ -10,7 +10,7 @@ import { ErrorComponent } from './components/error/error.component';
 
 const routes: Routes = [
   {path:'', component:AboutComponent},
-  {path:'sobre-mi', component:AboutComponent},
+  {path:'inicio', component:AboutComponent},
   {path:'proyectos', component:ProjectsComponent},
   {path:'crear-proyecto', component: CreateComponent},
   {path:'contacto', component:ContactComponent},
