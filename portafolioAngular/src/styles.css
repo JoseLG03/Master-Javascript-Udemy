@@ -109,7 +109,7 @@ transition: transform 500ms;
     border-right: 1px solid #b7b7b7;
     display: block;
     box-shadow: 0px 0px 40px black;
-    height: 100%;
+    height: auto;
     min-height: 400px;
 }
 
