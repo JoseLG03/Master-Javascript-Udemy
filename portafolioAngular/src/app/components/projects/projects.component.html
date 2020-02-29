@@ -1,1 +1,12 @@
-<p>projects works!</p>
+<div class="container">
+    <h2>Projectos</h2>
+    <ul>
+        <li *ngFor="let project of projects">
+            <h3>{{project.name}}</h3>
+            <span>Descripción: {{project.description}}.</span><br>
+            <span>Categoría: {{project.category}}.</span><br>
+            <span>Lenguajes: {{project.langs}}.</span><br>
+            <span>Año de publicación: {{project.year}}.</span>
+        </li>
+    </ul>
+</div>
