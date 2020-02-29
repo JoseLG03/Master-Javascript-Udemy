@@ -107,7 +107,10 @@ transition: transform 500ms;
     padding: 70px;
     border-left: 1px solid #b7b7b7;
     border-right: 1px solid #b7b7b7;
+    display: block;
     box-shadow: 0px 0px 40px black;
+    height: 100%;
+    min-height: 400px;
 }
 
 footer{
