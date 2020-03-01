@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:'proyectos', component:ProjectsComponent},
   {path:'crear-proyecto', component: CreateComponent},
   {path:'contacto', component:ContactComponent},
-  {path:'detail/:id', component:DetailComponent},
+  {path:'proyecto/:id', component:DetailComponent},
   {path:'**', component:ErrorComponent}
 ];
 
