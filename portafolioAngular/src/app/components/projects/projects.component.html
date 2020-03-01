@@ -6,7 +6,7 @@
                 <img src="{{url+'get-image/'+project.img}}" *ngIf = "project.img" />
             </div>
             <h3>
-                <a [routerLink]="['proyecto',project._id]">
+                <a [routerLink]="['/proyecto', project._id]">
                     {{project.name}}
                 </a>
             </h3>

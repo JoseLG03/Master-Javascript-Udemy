@@ -1,0 +1,14 @@
+article{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    text-align: justify;
+    font-family: 'roboto';
+}
+
+article p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
