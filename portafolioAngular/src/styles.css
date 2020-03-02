@@ -142,7 +142,6 @@ footer{
     float: right;
     height: 100%;
     background: #24292e;
-    /*background: linear-gradient(90deg, #47515a, #24292e);*/
     line-height: 50px;
 }
 
@@ -162,8 +161,8 @@ footer{
 
 #footer_links ul li a{
     display: initial;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
     height: inherit;
     color: white;
 }
@@ -174,7 +173,9 @@ footer{
     width: 40px;   
 }
 
-#face:hover{
+.redesSociales:hover{
+    transition: all 1000ms;
     height: 40px;
-    width: 40px; 
+    width: 40px;   
+    /*background: linear-gradient(90deg, #47515a, #24292e);*/
 }

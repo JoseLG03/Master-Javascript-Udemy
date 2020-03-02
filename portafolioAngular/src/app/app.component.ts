@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portafolio Angular';
+  imgPath = './../assets/img/038-github.png';
 }
