@@ -173,3 +173,8 @@ footer{
     height: 40px;
     width: 40px;   
 }
+
+#face:hover{
+    height: 40px;
+    width: 40px; 
+}
