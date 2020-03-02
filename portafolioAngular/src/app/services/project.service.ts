@@ -16,6 +16,7 @@ export class ProjectService{
     testService(){
         return "probando el sistema con Angular";
     }
+
     createService(project: Project):Observable<any>{
         let params = JSON.stringify(project);
         let headers = new HttpHeaders().set('Content-Type','application/json');
@@ -26,5 +27,10 @@ export class ProjectService{
         let headers = new HttpHeaders().set('Content-Type','application/json');
 
         return this._http.get(this.url+'projects',{headers: headers});
+    }
+
+    getProjectDetail(id): Observable<any>{
+        let headers = new HttpHeaders().set('Content-Type','application/json');
+        return this._http.get(this.url+'project/'+id, {headers:headers});
     }
 }

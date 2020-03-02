@@ -16,6 +16,7 @@ export class CreateComponent implements OnInit {
   public project: Project;
   public status: string;
   public filesToUplod : Array<File>;
+  public saveProject: any;
 
   constructor(
     private _projectService: ProjectService,
@@ -34,6 +35,7 @@ export class CreateComponent implements OnInit {
           //subir imagen
           this._uploadService.makeFileRequest(Global.url+"upload-img/"+response.project._id,[],this.filesToUplod,'img').then
           ((result:any)=>{
+            this.saveProject = result.project;
             this.status = 'sucess';
             console.log(result);
             form.reset();

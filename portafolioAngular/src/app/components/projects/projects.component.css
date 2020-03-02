@@ -10,6 +10,14 @@
     margin-top: 20px;
 }
 
+.project a{
+    color: #585757;
+}
+
+.project span{
+    color: #b7b7b7;
+}
+
 .project .image{
     width: 100px;
     height: 100px;
