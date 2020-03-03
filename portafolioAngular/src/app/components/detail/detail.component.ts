@@ -44,6 +44,7 @@ export class DetailComponent implements OnInit {
   }
 
   deleteProject(id){
+    console.log(id+"Soy del component");
     this._projectService.deleteProject(id).subscribe(
       response =>{
         if(response.project){
@@ -54,5 +55,9 @@ export class DetailComponent implements OnInit {
         console.log(<any>error);
       }
     );
+  }
+  verProject(id){
+    console.log(this.project);
+    console.log(id)
   }
 }
