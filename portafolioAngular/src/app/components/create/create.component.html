@@ -3,7 +3,7 @@
     <img id="img" src="../assets/img/shattered-island.jpg"/>
     <div class="message succes" *ngIf="status == 'sucess'">
         <p>El proyecto se ha creado correctamente. 
-            <a [routerLink]="['/proyectos', saveProject._id]">Ver proyecto.</a>
+            <a [routerLink]="['/proyecto', saveProject._id]">Ver proyecto.</a>
         </p>
     </div>
     <div class="message failed" *ngIf="status == 'failed'">
