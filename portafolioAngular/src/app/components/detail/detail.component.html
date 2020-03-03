@@ -9,6 +9,6 @@
         <p>Lenguajes: {{project.langs}}.<p>         
         <p>Año de publicación: {{project.year}}.<p> 
         <a href="#" class="buttonEdit">Editar</a>
-        <a href="#" class="buttonDelete">Borrar</a>
+        <a (click)="deleteProject(project._id)" class="buttonDelete">Borrar</a>
     </div>
 </div>
