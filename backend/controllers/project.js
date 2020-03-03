@@ -85,9 +85,8 @@ let controller ={
         } );
     },
     deleteProject:function(req,res){
-        let deleteProject = req.params.id;
-
-        Project.findOneAndDelete(deleteProject,(err,projectRemoved)=>{
+        var id = req.params.id;
+        Project.findByIdAndRemove(id,(err,projectRemoved)=>{
             if(err){
                 return res.status(500).send({message: 'Error al borrar.'});
             }
