@@ -16,9 +16,10 @@ export class EditComponent implements OnInit {
 
   public tittle:string;
   public project: Project;
+  public saveProject: any;
   public status: string;
   public filesToUplod : Array<File>;
-  public saveProject: any;
+  public url:string;
 
   constructor(
     private _projectService: ProjectService,
@@ -27,6 +28,7 @@ export class EditComponent implements OnInit {
     private _router: Router
     ) {
       this.tittle = "Editar proyecto";
+      this.url = Global.url;
     }
 
 
