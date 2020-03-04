@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container" *ngIf="project">
     <h2>{{tittle}}</h2>
     <img id="img" src="../assets/img/shattered-island.jpg"/>
     <div class="message succes" *ngIf="status == 'sucess'">
@@ -39,7 +39,7 @@
             <label for="img">Imagen del proyecto:</label>
             <input type="file" name="img"  placeholder="subir imagen" (change)="fileChangeEvent($event)" />
         </p>
-        <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
+        <input type="submit" value="Guardar" [disabled]="!projectForm.form.valid" />
     </form>
 </section>
         

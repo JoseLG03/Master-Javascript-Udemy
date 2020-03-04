@@ -38,6 +38,7 @@
 
 .buttonEdit,
 .buttonDelete{
+    text-decoration: none;
     width: 30%;
     float: left;
     display: block;

@@ -10,6 +10,7 @@ import {Global} from '../../services/global';
   styleUrls: ['./create.component.css'],
   providers:[ProjectService, UploadService]
 })
+
 export class CreateComponent implements OnInit {
 
   public tittle:string;
