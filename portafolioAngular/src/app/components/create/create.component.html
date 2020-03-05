@@ -38,7 +38,8 @@
         <p>
             <label for="img">Imagen del proyecto:</label>
             <span class="image" *ngIf="project.img">
-                <img src="{{url+'get-image/'+project.img}}" *ngIf = "project.img" />
+                <label>Imagen del proyecto actual</label>
+                <img src="{{url+'get-image/'+project.img}}" class="img_edit" />
             </span>
             <input type="file" name="img"  placeholder="subir imagen" (change)="fileChangeEvent($event)" />
         </p>

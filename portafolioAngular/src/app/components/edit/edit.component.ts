@@ -50,4 +50,10 @@ export class EditComponent implements OnInit {
         }
       )
     }
+    onSubmit(projectForm){
+
+    }
+    fileChangeEvent(fileInput:any){
+
+    }
 }

@@ -18,6 +18,7 @@ export class CreateComponent implements OnInit {
   public status: string;
   public filesToUplod : Array<File>;
   public saveProject: any;
+  public url:string;
 
   constructor(
     private _projectService: ProjectService,
@@ -26,6 +27,7 @@ export class CreateComponent implements OnInit {
       this.project = new Project(
         '','','','',2020,'',''
       );
+      this.url = Global.url;
      }
   onSubmit(form){
     //guardar datos
