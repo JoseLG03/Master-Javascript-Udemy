@@ -51,9 +51,9 @@ export class EditComponent implements OnInit {
       )
     }
     onSubmit(projectForm){
-
+      console.log("onsubmit");
     }
     fileChangeEvent(fileInput:any){
-
+      console.log("cargar imagen")
     }
 }
