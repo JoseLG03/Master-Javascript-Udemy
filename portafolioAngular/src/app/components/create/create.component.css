@@ -100,3 +100,10 @@ form input[disabled]{
     height: 460px;
     float: right;
 }
+
+.img_edit{
+    margin-top: 10px;
+    margin-right: 30px;
+    width: 200px;
+    height: 150px;
+}
