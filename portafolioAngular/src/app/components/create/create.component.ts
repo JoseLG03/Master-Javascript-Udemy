@@ -59,6 +59,7 @@ export class CreateComponent implements OnInit {
     );
   }   
   ngOnInit(): void {
+    //$("header").css("background","blue");
   }
 
   fileChangeEvent(fileInput:any){
