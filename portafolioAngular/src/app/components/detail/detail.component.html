@@ -14,8 +14,8 @@
         </p>  
         <p *ngIf="confirm == true">
             <strong>¿Estas seguro de eliminar este proyecto?</strong>
-            <a (click)="setConfirm(false)" class="buttonEdit">Cancelar</a>
             <a (click)="deleteProject(project._id)" class="buttonDelete">Eliminar</a>
+            <a (click)="setConfirm(false)" class="buttonEdit">Cancelar</a>
         </p> 
     </div>
 </div>

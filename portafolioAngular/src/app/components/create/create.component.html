@@ -41,7 +41,7 @@
                 <img src="{{url+'get-image/'+project.img}}" class="img_edit" />
                 <br>
             </span>
-            <input type="file" name="img"  placeholder="subir imagen" (change)="fileChangeEvent($event)" />
+            <input type="file" name="img"  placeholder="subir imagen" (change)="fileChangeEvent($event)" required />
         </p>
         <p>
             <input type="submit" value="Guardar" [disabled]="!formProject.form.valid" />

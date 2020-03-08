@@ -1,15 +1,20 @@
 <div class="container">
     <h2 class="tittle">Portafolio</h2>
-    <ul>
-        <li *ngFor="let project of projects" class="project">
-            <div class="image">
-                <img src="{{url+'get-image/'+project.img}}" *ngIf = "project.img" />
-            </div>
-            <h3>
-                <a [routerLink]="['/proyecto', project._id]">
-                    {{project.name}}
-                </a>
-            </h3>
-        </li>
-    </ul>
+    <div *ngIf="!projects" class="loading">
+        <img src="../../../assets/img/loading.gif" >
+    </div>
+    <div *ngIf="projects">
+        <ul>
+            <li *ngFor="let project of projects" class="project">
+                <div class="image">
+                    <img src="{{url+'get-image/'+project.img}}" *ngIf = "project.img" />
+                </div>
+                <h3>
+                    <a [routerLink]="['/proyecto', project._id]">
+                        {{project.name}}
+                    </a>
+                </h3>
+            </li>
+        </ul>
+    </div>
 </div>
