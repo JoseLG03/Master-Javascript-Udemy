@@ -7,8 +7,15 @@
         <h3>{{project.description}}</h3>
         <p>Categoría: {{project.category}}.</p>  
         <p>Lenguajes: {{project.langs}}.</p>         
-        <p>Año de publicación: {{project.year}}.</p>   
-        <a [routerLink]="['/editar-proyecto',project._id]" class="buttonEdit">Editar</a>
-        <a (click)="deleteProject(project._id)" class="buttonDelete">Borrar</a>
+        <p>Año de publicación: {{project.year}}.</p> 
+        <p *ngIf="confirm == false">
+            <a [routerLink]="['/editar-proyecto',project._id]" class="buttonEdit">Editar</a>
+            <a  (click)="setConfirm(true)" class="buttonDelete">Borrar</a>
+        </p>  
+        <p *ngIf="confirm == true">
+            <strong>¿Estas seguro de eliminar este proyecto?</strong>
+            <a (click)="setConfirm(false)" class="buttonEdit">Cancelar</a>
+            <a (click)="deleteProject(project._id)" class="buttonDelete">Eliminar</a>
+        </p> 
     </div>
 </div>
