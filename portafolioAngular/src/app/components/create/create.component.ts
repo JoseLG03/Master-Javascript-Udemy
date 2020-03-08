@@ -34,7 +34,6 @@ export class CreateComponent implements OnInit {
     this._projectService.createService(this.project).subscribe(
       response =>{
         if(response.project){
-
           //subir imagen
           this._uploadService.makeFileRequest(Global.url+"upload-img/"+response.project._id,[],this.filesToUplod,'img').then
           ((result:any)=>{

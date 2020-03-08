@@ -9,7 +9,7 @@
     <div class="message failed" *ngIf="status == 'failed'">
         <p>El poyecto NO SE HA PODIDO CREAR.</p>
     </div>
-    <form #projectForm = "ngForm" (ngSubmit) ='onSubmit(projectForm)'>
+    <form #formProject ='ngForm' (ngSubmit)="onSubmit(formProject)">
         <p>
             <label for="name">Nombre:</label>
             <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required/>
@@ -43,7 +43,7 @@
             <input type="file" name="img"  placeholder="subir imagen" (change)="fileChangeEvent($event)" />
         </p>
         <p>
-            <input type="submit" value="Guardar" [disabled]="!projectForm.form.valid" />
+            <input type="submit" value="Guardar" [disabled]="!formProject.form.valid" />
         </p>
     </form>
 </section>

@@ -50,7 +50,7 @@ export class EditComponent implements OnInit {
         }
       )
     }
-    onSubmit(){
+    onSubmit(form){
       this._projectService.updateProject(this.project).subscribe(
         response =>{
           if(response.project){
