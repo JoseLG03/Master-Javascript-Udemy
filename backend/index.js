@@ -12,8 +12,8 @@ mongus.connect('mongodb+srv://auratus_03:<auratus_03>@cluster0-azdyr.mongodb.net
           console.log("Conexión exitosa");
           
           //creación del servidor
-          //app.listen(port, ()=>{
-          //    console.log("Servidor arriba");
-          //})
+          app.listen(port, ()=>{
+              console.log("Servidor arriba");
+          })
       })
       .catch(error=>console.log(error));  
