@@ -1,6 +1,6 @@
 <section class="container" *ngIf="project">
     <h2>{{tittle}}</h2>
-    <img id="img" src="../assets/img/shattered-island.jpg"/>
+    <img id="img" src="../../../assets/img/shattered-island.jpg"/>
     <div class="message succes" *ngIf="status == 'sucess'">
         <p>El proyecto se ha creado correctamente. 
             <a [routerLink]="['/proyecto', saveProject._id]">Ver proyecto.</a>
