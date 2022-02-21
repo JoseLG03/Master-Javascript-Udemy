@@ -1,0 +1,22 @@
+{
+  "name": "master-javascript",
+  "version": "1.0.0",
+  "description": "Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseLG03/Master-Javascript-Udemy.git"
+  },
+  "keywords": [
+    "course"
+  ],
+  "author": "José López G <antares069@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoseLG03/Master-Javascript-Udemy/issues"
+  },
+  "homepage": "https://github.com/JoseLG03/Master-Javascript-Udemy#readme"
+}
