@@ -9,7 +9,7 @@
     "connect-multiparty": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "http-server": "^0.12.1",
+    "http-server": "^0.12.3",
     "jquery": "^3.4.1",
     "mongoose": "^5.9.1"
   },
